@@ -1,0 +1,40 @@
+\def\CurrentAudience{french}
+
+\documentclass[twoside,openright]{report}
+\usepackage{style}
+\usepackage{subfiles}
+
+% Proprieté du document
+\date{}
+
+\begin{document}
+
+\onecolumn
+\input{./0_TitlePage.tex}
+\lstset{language=C}
+\newpage\null\thispagestyle{empty}\newpage
+
+\tableofcontents
+\clearpage
+
+\pagestyle{fancy}
+
+% Insert sections here
+\subfile{1_intro}
+%\subfile{2_methodeSimple}
+%\subfile{3_methodeAv}
+%\subfile{4_friedrichSimple}
+
+% Bibliography
+\nocite{*}
+\bibliographystyle{unsrt}
+\bibliography{references}
+\clearpage
+
+% Insert appendixes here
+\begin{appendix}
+
+
+\end{appendix}
+
+\end{document}

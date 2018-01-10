@@ -1,0 +1,98 @@
+	\def\OFFSET{1.4cm}
+	\def\OFF{2.5pt}
+	\def\RATIO{0.2}
+    \def\H{2.5cm}
+    \def\HS{0.5cm}
+
+    \tikzstyle{square}=[line width=3pt, join=round, cap=round]
+    \tikzstyle{side}=[line width=5pt, join=round, cap=round]
+    \tikzstyle{arrow}=[line width=9pt, join=round, cap=round,->,rounded corners=3cm, cpurple]
+    \tikzstyle{border}=[line width=2pt, join=round, cap=round]
+    \begin{tikzpicture}[>=triangle 45]
+		\coordinate (vh) at (\H ,0);
+		\coordinate (vv) at (0, \H);
+		\coordinate (vhs) at (\HS, 0);
+		\coordinate (vvs) at (0, \HS);
+		
+				
+		\coordinate (p000) at (0,0);
+    	\coordinate (p001) at ($(p000)+1*(vh)$);
+    	\coordinate (p002) at ($(p000)+2*(vh)$);
+    	\coordinate (p003) at ($(p000)+3*(vh)$);
+    	\coordinate (p010) at ($(p000)+1*(vv)$);
+    	\coordinate (p011) at ($(p010)+1*(vh)$);
+		\coordinate (p012) at ($(p010)+2*(vh)$);
+    	\coordinate (p013) at ($(p010)+3*(vh)$);
+    	\coordinate (p020) at ($(p000)+2*(vv)$);
+    	\coordinate (p021) at ($(p020)+1*(vh)$);
+    	\coordinate (p022) at ($(p020)+2*(vh)$);
+    	\coordinate (p023) at ($(p020)+3*(vh)$);
+    	\coordinate (p030) at ($(p000)+3*(vv)$);
+    	\coordinate (p031) at ($(p030)+1*(vh)$);
+    	\coordinate (p032) at ($(p030)+2*(vh)$);
+    	\coordinate (p033) at ($(p030)+3*(vh)$);
+
+		\coordinate (p100) at ($(p000)-(vvs)$);
+		\coordinate (p101) at ($(p100)+1*(vh)$);
+    	\coordinate (p102) at ($(p100)+2*(vh)$);
+    	\coordinate (p103) at ($(p100)+3*(vh)$);
+    	\coordinate (p104) at ($(p000)-2*(vvs)$);
+    	\coordinate (p105) at ($(p003)-2*(vvs)$);
+    	
+    	\coordinate (p200) at ($(p003)+(vhs)$);
+		\coordinate (p201) at ($(p200)+1*(vv)$);
+    	\coordinate (p202) at ($(p200)+2*(vv)$);
+    	\coordinate (p203) at ($(p200)+3*(vv)$);
+    	\coordinate (p204) at ($(p003)+2*(vhs)$);
+    	\coordinate (p205) at ($(p033)+2*(vhs)$);
+    	
+		\coordinate (p300) at ($(p033)+(vvs)$);
+		\coordinate (p301) at ($(p300)-1*(vh)$);
+    	\coordinate (p302) at ($(p300)-2*(vh)$);
+    	\coordinate (p303) at ($(p300)-3*(vh)$);
+    	\coordinate (p304) at ($(p033)+2*(vvs)$);
+    	\coordinate (p305) at ($(p030)+2*(vvs)$);
+    	
+		\coordinate (p400) at ($(p030)-(vhs)$);
+		\coordinate (p401) at ($(p400)-1*(vv)$);
+    	\coordinate (p402) at ($(p400)-2*(vv)$);
+    	\coordinate (p403) at ($(p400)-3*(vv)$);
+    	\coordinate (p404) at ($(p030)-2*(vhs)$);
+    	\coordinate (p405) at ($(p000)-2*(vhs)$);
+    	
+		\filldraw[square, fill=\COA] (p000) -- (p001) -- (p011) -- (p010) -- (p000);
+		\filldraw[square, fill=\COB] (p001) -- (p002) -- (p012) -- (p011) -- (p001);
+		\filldraw[square, fill=\COC] (p002) -- (p003) -- (p013) -- (p012) -- (p002);
+		\filldraw[square, fill=\COD] (p010) -- (p011) -- (p021) -- (p020) -- (p010);
+		\filldraw[square, fill=\COE] (p011) -- (p012) -- (p022) -- (p021) -- (p011);
+		\filldraw[square, fill=\COF] (p012) -- (p013) -- (p023) -- (p022) -- (p012);
+		\filldraw[square, fill=\COG] (p020) -- (p021) -- (p031) -- (p030) -- (p020);
+		\filldraw[square, fill=\COH] (p021) -- (p022) -- (p032) -- (p031) -- (p021);
+		\filldraw[square, fill=\COI] (p022) -- (p023) -- (p033) -- (p032) -- (p022);
+		
+		\filldraw[side, fill=\CAA] (p000) -- (p001) -- (p101) -- (p100) -- (p000);
+		\filldraw[side, fill=\CAB] (p001) -- (p002) -- (p102) -- (p101) -- (p001);
+		\filldraw[side, fill=\CAC] (p002) -- (p003) -- (p103) -- (p102) -- (p002);
+		\filldraw[side, fill=\CAD] (p100) -- (p103) -- (p105) -- (p104) -- (p100);
+		
+		\filldraw[side, fill=\CBA] (p003) -- (p013) -- (p201) -- (p200) -- (p003);
+		\filldraw[side, fill=\CBB] (p013) -- (p023) -- (p202) -- (p201) -- (p013);
+		\filldraw[side, fill=\CBC] (p023) -- (p033) -- (p203) -- (p202) -- (p023);
+		\filldraw[side, fill=\CBD] (p200) -- (p203) -- (p205) -- (p204) -- (p200);
+		
+		\filldraw[side, fill=\CCA] (p033) -- (p032) -- (p301) -- (p300) -- (p033);
+		\filldraw[side, fill=\CCB] (p032) -- (p031) -- (p302) -- (p301) -- (p032);
+		\filldraw[side, fill=\CCC] (p031) -- (p030) -- (p303) -- (p302) -- (p031);
+		\filldraw[side, fill=\CCD] (p300) -- (p303) -- (p305) -- (p304) -- (p300);
+		
+		\filldraw[side, fill=\CDA] (p030) -- (p020) -- (p401) -- (p400) -- (p030);
+		\filldraw[side, fill=\CDB] (p020) -- (p010) -- (p402) -- (p401) -- (p020);
+		\filldraw[side, fill=\CDC] (p010) -- (p000) -- (p403) -- (p402) -- (p010);
+		\filldraw[side, fill=\CDD] (p400) -- (p403) -- (p405) -- (p404) -- (p400);
+    	
+    	\draw[side] (p000) -- (p003) -- (p033) -- (p030) -- (p000);    	
+    	
+		\draw[square] (p010) -- (p013);
+		\draw[square] (p020) -- (p023);
+		\draw[square] (p001) -- (p031);
+		\draw[square] (p002) -- (p032);    

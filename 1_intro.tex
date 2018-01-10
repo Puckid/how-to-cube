@@ -1,0 +1,182 @@
+\documentclass[0_Main.tex]{subfiles}
+\begin{document}
+
+\showto{french}{\chapter{Introduction}}
+\showto{english}{\chapter{Introduction}}
+\begin{shownto}{french}
+Ce document présente une méthode d'apprentissage complète du Rubik's Cube original (3x3x3). Cette stratégie d'apprentissage part de la méthode la plus simple de résolution du Rubik's Cube expliquée le plus basiquement possible, puis fait évoluer cette méthode progressivement vers une résolution avancée optimisée pour le Speedcubing. Ce document s'adresse donc aussi bien à des débutants qu'à des gens ayant déjà quelques notions et sachant résoudre le cube avec une méthode simplifié.
+
+Une séparation en étape successive est choisie afin de maximiser les chances de mémoriser tout le processus de résolution. Il est conseillé d’attendre de bien maîtriser une partie avant de passer à la suivante.
+
+Avant de commencer l’apprentissage, il semble intéressant de s’arrêter un moment sur des concepts de base du Rubik’s Cube.
+\end{shownto}
+
+\begin{shownto}{english}
+TODO: English part missing! 
+\end{shownto}
+
+\showto{french}{\section{C'est quoi un Rubik's Cube}}
+\showto{english}{\section{What's a Rubik's Cube}}
+\begin{shownto}{french}
+Le Rubik’s Cube a été inventé par Ernő Rubik, un professeur d’architecture Hongrois qui voulait faire deviner à ces élèves à quoi ressemblait l’intérieur de ce cube.
+Le Rubik’s est composé de 26 petits cubes (qui en réalité ne sont pas vraiment des cubes) et d’un mécanisme central permettant de faire pivoter chacune des faces. Le principal intérêt du Rubik’s Cube provient du nombre de position initiale possible, il y en a 43~252~003~274~489~856~000, soit plus de 43 trillions. Comme c’est un chiffre un peu grand pour se le représenter, voici quelques exemples:
+
+Si on avait à disposition un cube dans chacune des positions possibles et qu’on les rangeait parfaitement sur le sol, il faudrait recouvrir 256 fois la terre entière pour les placer tous.
+
+Si on empilait tous ces Rubik’s Cube, la hauteur du tout serait 250 mille années-lumière, soit le diamètre moyen d’une galaxie.
+\end{shownto}
+
+\begin{shownto}{english}
+TODO: English part missing! 
+\end{shownto}
+
+\clearpage
+\showto{french}{\section{Trucs à savoir}}
+\showto{english}{\section{Basics to know}}
+\begin{shownto}{french}
+Il y a quelques concepts qu’il est bon d’avoir en mémoire avant de commencer l’apprentissage. Premièrement, il faut savoir que les centres des faces (fig.\ref{fig:cubeCentre}) ne bougent pas! Il ne font que tourner sur eux-même. Ils servent donc de référence à la couleur d’une face: la face jaune est la face dont le centre est jaune, etc... 
+
+Il y a 12 arrêtes sur l’ensemble du cube, ces arrêtes possèdent deux couleurs (fig.\ref{fig:cubeArrete}).
+
+Il y a 8 coins qui possèdent eux 3 couleurs (fig.\ref{fig:cubeCoin})
+\end{shownto}
+
+\begin{shownto}{english}
+TODO: English part missing! 
+\end{shownto}
+
+\begin{figure}[H]
+\centering
+
+\begin{subfigure}[b]{0.31\textwidth}
+	\def\CAA{cgray}
+	\def\CAB{cgray}
+	\def\CAC{cgray}
+	\def\CAD{cgray}
+	\def\CAE{cred}
+	\def\CAF{cgray}
+	\def\CAG{cgray}
+	\def\CAH{cgray}
+	\def\CAI{cgray}
+	
+	\def\CBA{cgray}
+	\def\CBB{cgray}
+	\def\CBC{cgray}
+	\def\CBD{cgray}
+	\def\CBE{cblue}
+	\def\CBF{cgray}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cwhite}
+	\def\CCF{cgray}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}	
+	\caption{\label{fig:cubeCentre} \showto{french}{Les centres.} \showto{english}{Centers}}
+\end{subfigure}
+~
+\begin{subfigure}[b]{0.31\textwidth}
+	\def\CAA{cgray}
+	\def\CAB{cred}
+	\def\CAC{cgray}
+	\def\CAD{cred}
+	\def\CAE{cgray}
+	\def\CAF{cred}
+	\def\CAG{cgray}
+	\def\CAH{cred}
+	\def\CAI{cgray}
+	
+	\def\CBA{cgray}
+	\def\CBB{cblue}
+	\def\CBC{cgray}
+	\def\CBD{cblue}
+	\def\CBE{cgray}
+	\def\CBF{cblue}
+	\def\CBG{cgray}
+	\def\CBH{cblue}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cwhite}
+	\def\CCC{cgray}
+	\def\CCD{cwhite}
+	\def\CCE{cgray}
+	\def\CCF{cwhite}
+	\def\CCG{cgray}
+	\def\CCH{cwhite}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}
+	\caption{\label{fig:cubeArrete} \showto{french}{Les arrêtes.} \showto{english}{Edges}}
+\end{subfigure}
+~
+\begin{subfigure}[b]{0.31\textwidth}
+	\def\CAA{cred}
+	\def\CAB{cgray}
+	\def\CAC{cred}
+	\def\CAD{cgray}
+	\def\CAE{cgray}
+	\def\CAF{cgray}
+	\def\CAG{cred}
+	\def\CAH{cgray}
+	\def\CAI{cred}
+	
+	\def\CBA{cblue}
+	\def\CBB{cgray}
+	\def\CBC{cblue}
+	\def\CBD{cgray}
+	\def\CBE{cgray}
+	\def\CBF{cgray}
+	\def\CBG{cblue}
+	\def\CBH{cgray}
+	\def\CBI{cblue}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cgray}
+	\def\CCC{cwhite}
+	\def\CCD{cgray}
+	\def\CCE{cgray}
+	\def\CCF{cgray}
+	\def\CCG{cwhite}
+	\def\CCH{cgray}
+	\def\CCI{cwhite}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}
+	\caption{\label{fig:cubeCoin} \showto{french}{Les coins.} \showto{english}{Corners}}
+\end{subfigure}
+\showto{french}{\caption{Les différents type de pièces qui compose le Rubik's Cube.}}
+\showto{english}{\caption{Different types of parts composing a Rubik's Cube.}}
+\end{figure}
+
+\begin{shownto}{french}
+Un Rubik's cube comporte six couleurs, sur la majorité des cubes ces couleurs sont: \colorbox{cblack}{\textcolor{cwhite}{blanc}}, \textcolor{cred}{rouge}, \textcolor{cblue}{bleu}, \textcolor{cyellow}{jaune}, \textcolor{cgreen}{vert} et \textcolor{corange}{orange}. Ces couleurs sont en général rangées de sorte qu'il soit facile de mémoriser les couleur qui sont opposées: le \colorbox{cblack}{\textcolor{cwhite}{blanc}} est en face du \textcolor{cyellow}{jaune}; le \textcolor{cred}{rouge} est en face du \textcolor{corange}{orange}; et le \textcolor{cblue}{bleu} est en face du \textcolor{cgreen}{vert}.
+
+Pour toutes les illustrations des cubes, deux couleurs supplémentaires sont utilisés: \textcolor{cgray}{gris} pour les cubes à ignorer et \textcolor{cblack}{noir} pour montrer où une pièce doit aller.
+\end{shownto}
+
+\begin{shownto}{english}
+TODO: English part missing! 
+\end{shownto}
+
+\clearpage
+
+\subfile{11_notations.tex}
+
+\end{document}

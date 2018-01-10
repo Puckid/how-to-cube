@@ -1,0 +1,667 @@
+\documentclass[0_Main.tex]{subfiles}
+\begin{document}
+
+\showto{french}{\section{Notations de mouvement}}
+\showto{english}{\section{Movement notations}}
+\begin{wrapfigure}{r}{0.4\columnwidth}
+\vspace{-5pt}
+\centering
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cred}
+	
+	\def\CBA{cblue}
+	\def\CBB{cblue}
+	\def\CBC{cblue}
+	\def\CBD{cblue}
+	\def\CBE{cblue}
+	\def\CBF{cblue}
+	\def\CBG{cblue}
+	\def\CBH{cblue}
+	\def\CBI{cblue}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cwhite}
+	\def\CCC{cwhite}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cwhite}
+	\resizebox{0.45\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\draw[arrow] ($(p311)+0.5*(vh3)+0.5*(vv3)+1*(vv1)$) node[above](up){\resizebox{\HXA}{!}{\textcolor{cpurple}{Up}}} --++($-1*(vv1)$);
+	\draw[arrow] ($(p332)+1.5*(vv3)$) node[right](back){\resizebox{3.8cm}{!}{\textcolor{cpurple}{Back}}} --++($-1.5*(vv3)$);
+	\draw[arrow] ($(p310)-1.5*(vh3)$) node[left](left){\resizebox{3.8cm}{!}{\textcolor{cpurple}{Left}}} --++($1.5*(vh3)$);
+	\draw[arrow] ($(p211)+0.5*(vh2)+0.5*(vv2)+2*(vh2)$) node[right](right){\resizebox{4.2cm}{!}{\textcolor{cpurple}{Right}}} --++($-2*(vh2)$);
+	\draw[arrow] ($(p111)+0.5*(vh1)+0.5*(vv1)-2*(vh1)$) node[left](front){\resizebox{4.2cm}{!}{\textcolor{cpurple}{Front}}} --++($2*(vh1)$);
+	\draw[arrow] ($(p102)-1*(vv1)$) node[below](below) {\resizebox{4.6cm}{!}{\textcolor{cpurple}{Down}}} --++($1*(vv1)$);
+	\end{tikzpicture}
+	}    
+	%\vspace{-20pt}
+	\showto{french}{\caption{\label{fig:face}Définition des faces.}}
+	\showto{english}{\caption{\label{fig:face}Faces definition}}
+	\vspace{0pt}
+\end{wrapfigure}
+
+\showto{french}{Afin de faciliter l'explication des séquences de mouvement, une système de notations des mouvements standardisé est utilisé. Bien que le système ne soit pas forcément simple à maîtriser, il reste clair et facile à comprendre: étant donné un cube dans une certaine position, chacune de ses faces sont représentées par la première lettre du nom anglais (fig.\ref{fig:face}). Les séquences de mouvements sont des suites de ces lettres où une lettre simple représente une rotation d’un quart de tour dans le sens des aiguilles d’une montre et une lettre apostrophée représente une rotation d’un quart de tour dans le sens inverse des aiguilles d’une montre. Une lettre au carré (exemple: $R^2$) indique une rotation d’un demi tour. Le début de l'apprentissage n'utilise pas ces notations, puis elles sont introduite progressivement, il n'est donc pas indispensable qu'elles soient déjà maîtrisées à ce stade.}
+
+\showto{english}{TODO: English part missing!}
+
+\begin{figure}[H]
+\def\W{0.15}
+\def\S{0.05mm}
+
+\centering
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cyellow}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cyellow}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cyellow}
+	
+	\def\CBA{cblue}
+	\def\CBB{cblue}
+	\def\CBC{cblue}
+	\def\CBD{cblue}
+	\def\CBE{cblue}
+	\def\CBF{cblue}
+	\def\CBG{cblue}
+	\def\CBH{cblue}
+	\def\CBI{cblue}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cwhite}
+	\def\CCC{cred}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cred}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cred}
+	\caption*{\label{fig:mouvR} \LARGE{$R$}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cwhite}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cwhite}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cwhite}
+	\def\CAH{cred}
+	\def\CAI{cred}
+	
+	\def\CBA{cblue}
+	\def\CBB{cblue}
+	\def\CBC{cblue}
+	\def\CBD{cblue}
+	\def\CBE{cblue}
+	\def\CBF{cblue}
+	\def\CBG{cblue}
+	\def\CBH{cblue}
+	\def\CBI{cblue}
+	
+	\def\CCA{corange}
+	\def\CCB{cwhite}
+	\def\CCC{cwhite}
+	\def\CCD{corange}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{corange}
+	\def\CCH{cwhite}
+	\def\CCI{cwhite}
+	\caption*{\label{fig:mouvL} \LARGE{$L$}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cred}
+	
+	\def\CBA{cwhite}
+	\def\CBB{cblue}
+	\def\CBC{cblue}
+	\def\CBD{cwhite}
+	\def\CBE{cblue}
+	\def\CBF{cblue}
+	\def\CBG{cwhite}
+	\def\CBH{cblue}
+	\def\CBI{cblue}
+	
+	\def\CCA{cgreen}
+	\def\CCB{cgreen}
+	\def\CCC{cgreen}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cwhite}
+	\caption*{\label{fig:mouvF} \LARGE{$F$}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cgreen}
+	\def\CAB{cgreen}
+	\def\CAC{cgreen}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cred}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cblue}
+	\def\CBE{cblue}
+	\def\CBF{cblue}
+	\def\CBG{cblue}
+	\def\CBH{cblue}
+	\def\CBI{cblue}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cwhite}
+	\def\CCC{cwhite}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cwhite}
+	\caption*{\label{fig:mouvD} \LARGE{$D$}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cblue}
+	\def\CAH{cblue}
+	\def\CAI{cblue}
+	
+	\def\CBA{cblue}
+	\def\CBB{cblue}
+	\def\CBC{cblue}
+	\def\CBD{cblue}
+	\def\CBE{cblue}
+	\def\CBF{cblue}
+	\def\CBG{corange}
+	\def\CBH{corange}
+	\def\CBI{corange}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cwhite}
+	\def\CCC{cwhite}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cwhite}
+	\caption*{\label{fig:mouvU} \LARGE{$U$}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cred}
+	
+	\def\CBA{cblue}
+	\def\CBB{cblue}
+	\def\CBC{cyellow}
+	\def\CBD{cblue}
+	\def\CBE{cblue}
+	\def\CBF{cyellow}
+	\def\CBG{cblue}
+	\def\CBH{cblue}
+	\def\CBI{cyellow}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cwhite}
+	\def\CCC{cwhite}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{cblue}
+	\def\CCH{cblue}
+	\def\CCI{cblue}
+	\caption*{\label{fig:mouvB} \LARGE{$B$}} 
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}   
+\end{subfigure}
+\\
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cwhite}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cwhite}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cwhite}
+	
+	\def\CBA{cblue}
+	\def\CBB{cblue}
+	\def\CBC{cblue}
+	\def\CBD{cblue}
+	\def\CBE{cblue}
+	\def\CBF{cblue}
+	\def\CBG{cblue}
+	\def\CBH{cblue}
+	\def\CBI{cblue}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cwhite}
+	\def\CCC{corange}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{corange}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{corange}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}   
+	\caption*{\label{fig:mouvR'} \LARGE{$R'$}} 	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cyellow}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cyellow}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cyellow}
+	\def\CAH{cred}
+	\def\CAI{cred}
+	
+	\def\CBA{cblue}
+	\def\CBB{cblue}
+	\def\CBC{cblue}
+	\def\CBD{cblue}
+	\def\CBE{cblue}
+	\def\CBF{cblue}
+	\def\CBG{cblue}
+	\def\CBH{cblue}
+	\def\CBI{cblue}
+	
+	\def\CCA{cred}
+	\def\CCB{cwhite}
+	\def\CCC{cwhite}
+	\def\CCD{cred}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{cred}
+	\def\CCH{cwhite}
+	\def\CCI{cwhite}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    
+	\caption*{\label{fig:mouvL'} \LARGE{$L'$}}	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cred}
+	
+	\def\CBA{cyellow}
+	\def\CBB{cblue}
+	\def\CBC{cblue}
+	\def\CBD{cyellow}
+	\def\CBE{cblue}
+	\def\CBF{cblue}
+	\def\CBG{cyellow}
+	\def\CBH{cblue}
+	\def\CBI{cblue}
+	
+	\def\CCA{cblue}
+	\def\CCB{cblue}
+	\def\CCC{cblue}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cwhite}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    
+	\caption*{\label{fig:mouvF'} \LARGE{$F'$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cred}
+	
+	\def\CBA{corange}
+	\def\CBB{corange}
+	\def\CBC{corange}
+	\def\CBD{cblue}
+	\def\CBE{cblue}
+	\def\CBF{cblue}
+	\def\CBG{cblue}
+	\def\CBH{cblue}
+	\def\CBI{cblue}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cwhite}
+	\def\CCC{cwhite}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cwhite}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    
+	\caption*{\label{fig:mouvD'} \LARGE{$D'$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cgreen}
+	\def\CAH{cgreen}
+	\def\CAI{cgreen}
+	
+	\def\CBA{cblue}
+	\def\CBB{cblue}
+	\def\CBC{cblue}
+	\def\CBD{cblue}
+	\def\CBE{cblue}
+	\def\CBF{cblue}
+	\def\CBG{cred}
+	\def\CBH{cred}
+	\def\CBI{cred}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cwhite}
+	\def\CCC{cwhite}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cwhite}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    
+	\caption*{\label{fig:mouvU'} \LARGE{$U'$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cred}
+	
+	\def\CBA{cblue}
+	\def\CBB{cblue}
+	\def\CBC{cwhite}
+	\def\CBD{cblue}
+	\def\CBE{cblue}
+	\def\CBF{cwhite}
+	\def\CBG{cblue}
+	\def\CBH{cblue}
+	\def\CBI{cwhite}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cwhite}
+	\def\CCC{cwhite}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{cgreen}
+	\def\CCH{cgreen}
+	\def\CCI{cgreen} 
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}   
+	\caption*{\label{fig:mouvB'} \LARGE{$B'$}}
+\end{subfigure}
+\showto{french}{\caption{\label{fig:mouv}Les différents mouvements standard sont montrés.}}
+\showto{english}{\caption{\label{fig:mouv}Here are the different movements}}
+\end{figure}
+
+\begin{shownto}{french}
+Il y a en plus quelques mouvements spéciaux, on ne citera ici que le cas des lettres minuscules. C’est le même principe qu’avec les lettres majuscules, sauf qu’il faut faire tourner deux faces, comme montrer (fig.\ref{fig:specialMouv}) avec la face frontale. Les doubles rotations sont aussi utile pour simplifier les notations, il s'agit simplement de rotation de 180° de la face, cela est indiqué par le symbole mathématique carré ''$\phantom{i}^2$''.
+\end{shownto}
+
+\begin{shownto}{english}
+TODO: English part missing! 
+\end{shownto}
+
+\begin{figure}[H]
+\def\W{0.25}
+\def\S{5mm}
+\centering
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cred}
+	
+	\def\CBA{cwhite}
+	\def\CBB{cwhite}
+	\def\CBC{cblue}
+	\def\CBD{cwhite}
+	\def\CBE{cwhite}
+	\def\CBF{cblue}
+	\def\CBG{cwhite}
+	\def\CBH{cwhite}
+	\def\CBI{cblue}
+	
+	\def\CCA{cgreen}
+	\def\CCB{cgreen}
+	\def\CCC{cgreen}
+	\def\CCD{cgreen}
+	\def\CCE{cgreen}
+	\def\CCF{cgreen}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cwhite}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}
+	\caption*{\label{fig:mouvf} \LARGE{$f$}}    	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cred}
+	
+	\def\CBA{cyellow}
+	\def\CBB{cyellow}
+	\def\CBC{cblue}
+	\def\CBD{cyellow}
+	\def\CBE{cyellow}
+	\def\CBF{cblue}
+	\def\CBG{cyellow}
+	\def\CBH{cyellow}
+	\def\CBI{cblue}
+	
+	\def\CCA{cblue}
+	\def\CCB{cblue}
+	\def\CCC{cblue}
+	\def\CCD{cblue}
+	\def\CCE{cblue}
+	\def\CCF{cblue}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cwhite}	
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}
+	\caption*{\label{fig:mouvf'} \LARGE{$f'$}}    	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{corange}
+	\def\CAH{corange}
+	\def\CAI{corange}
+	
+	\def\CBA{cblue}
+	\def\CBB{cblue}
+	\def\CBC{cblue}
+	\def\CBD{cblue}
+	\def\CBE{cblue}
+	\def\CBF{cblue}
+	\def\CBG{cgreen}
+	\def\CBH{cgreen}
+	\def\CBI{cgreen}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cwhite}
+	\def\CCC{cwhite}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cwhite}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}
+	\caption*{\label{fig:mouvU2} \LARGE{$U^2$}}    
+\end{subfigure}
+\showto{french}{\caption{\label{fig:specialMouv}Les mouvements spéciaux sont présentés ici.}}
+\showto{english}{\caption{\label{fig:specialMouv}Special movements are shown here.}}
+\end{figure}
+
+\end{document}

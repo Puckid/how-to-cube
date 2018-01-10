@@ -1,0 +1,118 @@
+	\def\OFFSET{1.4cm}
+	\def\OFF{2.5pt}
+	\def\RATIO{0.2}
+    \def\HXA{2.5cm}
+    \def\HYA{-0.5cm}
+    \def\VXA{0.0cm}
+    \def\VYA{2.55cm}
+    \def\HXB{1.5cm}
+    \def\HYB{0.85cm}
+    \def\VXB{\VXA}
+    \def\VYB{\VYA}
+    \def\HXC{\HXA}
+    \def\HYC{\HYA}
+    \def\VXC{\HXB}
+    \def\VYC{\HYB}
+    \tikzstyle{square}=[line width=3pt, join=round, cap=round]
+    \tikzstyle{side}=[line width=5pt, join=round, cap=round]
+    \tikzstyle{arrow}=[line width=9pt, join=round, cap=round,->,rounded corners=3cm, cpurple]
+    \tikzstyle{border}=[line width=2pt, join=round, cap=round]
+    \begin{tikzpicture}[>=triangle 45]
+		\coordinate (vh1) at (\HXA ,\HYA);
+		\coordinate (vv1) at (\VXA, \VYA);
+		\coordinate (vh2) at (\HXB, \HYB);
+		\coordinate (vv2) at (\VXB, \VYB);
+		\coordinate (vh3) at (\HXC, \HYC);
+		\coordinate (vv3) at (\VXC, \VYC);
+		    
+    	\coordinate (p100) at (0,0);
+    	\coordinate (p101) at ($(p100)+1*(vh1)$);
+    	\coordinate (p102) at ($(p100)+2*(vh1)$);
+    	\coordinate (p103) at ($(p100)+3*(vh1)$);
+    	\coordinate (p110) at ($(p100)+1*(vv1)$);
+    	\coordinate (p111) at ($(p110)+1*(vh1)$);
+		\coordinate (p112) at ($(p110)+2*(vh1)$);
+    	\coordinate (p113) at ($(p110)+3*(vh1)$);
+    	\coordinate (p120) at ($(p100)+2*(vv1)$);
+    	\coordinate (p121) at ($(p120)+1*(vh1)$);
+    	\coordinate (p122) at ($(p120)+2*(vh1)$);
+    	\coordinate (p123) at ($(p120)+3*(vh1)$);
+    	\coordinate (p130) at ($(p100)+3*(vv1)$);
+    	\coordinate (p131) at ($(p130)+1*(vh1)$);
+    	\coordinate (p132) at ($(p130)+2*(vh1)$);
+    	\coordinate (p133) at ($(p130)+3*(vh1)$);
+    	
+    	\coordinate (p200) at (p103);
+    	\coordinate (p201) at ($(p200)+1*(vh2)$);
+    	\coordinate (p202) at ($(p200)+2*(vh2)$);
+    	\coordinate (p203) at ($(p200)+3*(vh2)$);
+    	\coordinate (p210) at ($(p200)+1*(vv2)$);
+    	\coordinate (p211) at ($(p210)+1*(vh2)$);
+		\coordinate (p212) at ($(p210)+2*(vh2)$);
+    	\coordinate (p213) at ($(p210)+3*(vh2)$);
+    	\coordinate (p220) at ($(p200)+2*(vv2)$);
+    	\coordinate (p221) at ($(p220)+1*(vh2)$);
+    	\coordinate (p222) at ($(p220)+2*(vh2)$);
+    	\coordinate (p223) at ($(p220)+3*(vh2)$);
+    	\coordinate (p230) at ($(p200)+3*(vv2)$);
+    	\coordinate (p231) at ($(p230)+1*(vh2)$);
+    	\coordinate (p232) at ($(p230)+2*(vh2)$);
+    	\coordinate (p233) at ($(p230)+3*(vh2)$);
+    	
+		\coordinate (p300) at (p130);
+    	\coordinate (p301) at ($(p300)+1*(vh3)$);
+    	\coordinate (p302) at ($(p300)+2*(vh3)$);
+    	\coordinate (p303) at ($(p300)+3*(vh3)$);
+    	\coordinate (p310) at ($(p300)+1*(vv3)$);
+    	\coordinate (p311) at ($(p310)+1*(vh3)$);
+		\coordinate (p312) at ($(p310)+2*(vh3)$);
+    	\coordinate (p313) at ($(p310)+3*(vh3)$);
+    	\coordinate (p320) at ($(p300)+2*(vv3)$);
+    	\coordinate (p321) at ($(p320)+1*(vh3)$);
+    	\coordinate (p322) at ($(p320)+2*(vh3)$);
+    	\coordinate (p323) at ($(p320)+3*(vh3)$);
+    	\coordinate (p330) at ($(p300)+3*(vv3)$);
+    	\coordinate (p331) at ($(p330)+1*(vh3)$);
+    	\coordinate (p332) at ($(p330)+2*(vh3)$);
+    	\coordinate (p333) at ($(p330)+3*(vh3)$);  	  	
+    	
+		\filldraw[square, fill=\CAA] (p100) -- (p101) -- (p111) -- (p110);
+		\filldraw[square, fill=\CAB] (p101) -- (p102) -- (p112) -- (p111);
+		\filldraw[square, fill=\CAC] (p102) -- (p103) -- (p113) -- (p112);
+		\filldraw[square, fill=\CAD] (p110) -- (p111) -- (p121) -- (p120);
+		\filldraw[square, fill=\CAE] (p111) -- (p112) -- (p122) -- (p121);
+		\filldraw[square, fill=\CAF] (p112) -- (p113) -- (p123) -- (p122);
+		\filldraw[square, fill=\CAG] (p120) -- (p121) -- (p131) -- (p130);
+		\filldraw[square, fill=\CAH] (p121) -- (p122) -- (p132) -- (p131);
+		\filldraw[square, fill=\CAI] (p122) -- (p123) -- (p133) -- (p132);
+		
+		\filldraw[square, fill=\CBA] (p200) -- (p201) -- (p211) -- (p210);
+		\filldraw[square, fill=\CBB] (p201) -- (p202) -- (p212) -- (p211);
+		\filldraw[square, fill=\CBC] (p202) -- (p203) -- (p213) -- (p212);
+		\filldraw[square, fill=\CBD] (p210) -- (p211) -- (p221) -- (p220);
+		\filldraw[square, fill=\CBE] (p211) -- (p212) -- (p222) -- (p221);
+		\filldraw[square, fill=\CBF] (p212) -- (p213) -- (p223) -- (p222);
+		\filldraw[square, fill=\CBG] (p220) -- (p221) -- (p231) -- (p230);
+		\filldraw[square, fill=\CBH] (p221) -- (p222) -- (p232) -- (p231);
+		\filldraw[square, fill=\CBI] (p222) -- (p223) -- (p233) -- (p232);
+		
+		\filldraw[square, fill=\CCA] (p300) -- (p301) -- (p311) -- (p310);
+		\filldraw[square, fill=\CCB] (p301) -- (p302) -- (p312) -- (p311);
+		\filldraw[square, fill=\CCC] (p302) -- (p303) -- (p313) -- (p312);
+		\filldraw[square, fill=\CCD] (p310) -- (p311) -- (p321) -- (p320);
+		\filldraw[square, fill=\CCE] (p311) -- (p312) -- (p322) -- (p321);
+		\filldraw[square, fill=\CCF] (p312) -- (p313) -- (p323) -- (p322);
+		\filldraw[square, fill=\CCG] (p320) -- (p321) -- (p331) -- (p330);
+		\filldraw[square, fill=\CCH] (p321) -- (p322) -- (p332) -- (p331);
+		\filldraw[square, fill=\CCI] (p322) -- (p323) -- (p333) -- (p332);
+	
+    	\draw[side] (p100) -- (p200) -- (p203) -- (p233) -- (p330) -- (p130) -- (p100) -- (p200);
+    	\draw[side] (p130) -- (p133) -- (p233);
+    	\draw[side] (p103) -- (p133);
+    	
+    	\draw[square] (p101) -- (p131) -- (p331);
+    	\draw[square] (p102) -- (p132) -- (p332);
+    	\draw[square] (p201) -- (p231) -- (p310);
+    	\draw[square] (p202) -- (p232) -- (p320);
+    	\draw[square] (p110) -- (p113) -- (p213);
+    	\draw[square] (p120) -- (p123) -- (p223);
