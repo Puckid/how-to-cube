@@ -13,8 +13,8 @@ This project aim to give people a complete methodology to learn to solve a Rubik
 ## Chapter 5: Complete Friedrich
 
 # Donate
-This project is given for free, if you like it feel free to express your feeling with coins.
-btc: 1GYpPSEykq7NJ2UL3LhPCCV98CRW6DpKZD
-eth: 0xd1024c3f422EbBbCf1a71A662a78471b4cB9dbCc
-xmr: 43G1L2SEuzrUL4fDVVCxydPUeH167YE4A5F3u7rzuLf6T6vi1uoijmUN1XVA3ympPPj1XD3Nnm1nHJs34iBSd4NeFf9omJm
+This project is given for free, if you like it feel free to express your feeling with coins.<br />
+btc: 1GYpPSEykq7NJ2UL3LhPCCV98CRW6DpKZD<br />
+eth: 0xd1024c3f422EbBbCf1a71A662a78471b4cB9dbCc<br />
+xmr: 43G1L2SEuzrUL4fDVVCxydPUeH167YE4A5F3u7rzuLf6T6vi1uoijmUN1XVA3ympPPj1XD3Nnm1nHJs34iBSd4NeFf9omJm<br />
 stak: SRksUon6nsJRuM3FaUbR9HRfSUAnrFDeJ5
