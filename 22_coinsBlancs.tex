@@ -1,0 +1,273 @@
+\documentclass[0_Main.tex]{subfiles}
+\begin{document}
+
+\showto{french}{\section{Coins Blancs}}
+\showto{english}{\section{White corners}}
+\begin{wrapfigure}{l}{0.42\columnwidth}
+\vspace{-20pt}
+\centering
+	\def\CAA{cgray}
+	\def\CAB{cgray}
+	\def\CAC{cgray}
+	\def\CAD{cgray}
+	\def\CAE{cred}
+	\def\CAF{cgray}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cred}
+	
+	\def\CBA{cgray}
+	\def\CBB{cgray}
+	\def\CBC{cgray}
+	\def\CBD{cgray}
+	\def\CBE{cblue}
+	\def\CBF{cgray}
+	\def\CBG{cblue}
+	\def\CBH{cblue}
+	\def\CBI{cblue}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cwhite}
+	\def\CCC{cwhite}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cwhite}
+	\resizebox{0.35\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    
+	%\vspace{-20pt}
+	\showto{french}{\caption{\label{fig:faceBlanche} La face blanche finie}}
+	\showto{english}{\caption{\label{fig:faceBlanche} The finished white face}}
+	\vspace{-10pt}
+\end{wrapfigure}
+
+\showto{french}{Ensuite, il faut finir la face blanche en y plaçant les coins. Comme précédemment, il n’y a pas d’algorithme à suivre, il “suffit” d’essayer jusqu’à comprendre le principe, sauf qu’en plus de l’étape de la croix blanche, il faut faire attention de ne pas défaire ce qui a déjà été fait. Cela ne veut pas dire qu’il ne faut plus du tout toucher à la croix, mais il faut toujours faire attention de la remettre en place à chaque fois. Il faut aussi faire attention de mettre les coins au bon emplacement, par exemple, le coin blanc-bleu-rouge doit aller entre les faces bleu et rouge (rappel: la couleur d’une face est donnée par son centre).}
+\showto{english}{Then, we must finish the white face by placing the corners. As before, there is no algorithm to follow, you "just" have to try and understand the principle, except that in addition to the step of the white cross, we must be careful not to undo what has already been done. This does not mean that you do not have to touch the cross any more, but you must always be careful to put it back in place every time. You must also be careful to put the corners in the right place, for example, the white-blue-red corner must go between the blue and red faces (reminder: the color of a face is given by its center).}
+
+\clearpage
+
+\begin{conseil}
+
+\showto{french}{Un bon départ pour placer un coin est de le placer en dessous de l’emplacement où il devra se trouver avec son côté blanc vers soit (voir fig.\ref{fig:coin1}: le coin blanc-rouge-bleu se trouve sous l’emplacement représenté ici en noir). L’idée ensuite est de décaler le coin que l’on désire placer (fig.\ref{fig:coin2}) afin de pouvoir descendre l’emplacement (fig.\ref{fig:coin3}) sans perturber l’orientation du coin. Puis on  remet le coin où il était au début (entre fig.\ref{fig:coin1} et fig.\ref{fig:coin4}, il ne fait qu’un allé-retour), sauf que cette fois, comme on a au préalable descendu l’emplacement souhaité, le coin se trouve quasiment à la bonne place. il suffit de remonter le coin pour terminer le placement. Une fois cette étape réussie, vous devriez commencer à être à l’aise avec le cube!}
+
+\showto{english}{A good starting point for placing a corner is to have it underneath where it should be with its white side toward yourself (see fig.\ref{fig:coin1}: the white-red-blue corner is under the location shown here in black). The idea is then to shift the corner you want to place (fig.\ref{fig:coin2}) so you can lower the location (fig.\ref{fig:coin3}) without disturbing the orientation of the corner. Then you put the corner where it was at the beginning (between fig. \ref{fig:coin1} and fig.\ref{fig:coin4}, it makes only a back-and-forth movement), except that this time, as you previously descended the desired location, the corner is almost in the right place. You just have to go back up to finish the placement. Once this step is successful, you should begin to feel comfortable with the cube!}
+
+\end{conseil}
+
+\begin{figure}[H]
+\def\W{0.19}
+\def\S{0.05mm}
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cgray}
+	\def\CAB{cgray}
+	\def\CAC{cwhite}
+	\def\CAD{cgray}
+	\def\CAE{cred}
+	\def\CAF{cgray}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cblack}
+	
+	\def\CBA{cblue}
+	\def\CBB{cgray}
+	\def\CBC{cgray}
+	\def\CBD{cgray}
+	\def\CBE{cblue}
+	\def\CBF{cgray}
+	\def\CBG{cblack}
+	\def\CBH{cblue}
+	\def\CBI{cblue}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cwhite}
+	\def\CCC{cblack}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cwhite}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\draw[arrow] ($(p202)+0.5*(vv2)$) -- ($(p103)+0.3*(vv2)$) -- ($(p101)+0.5*(vv2)$);
+	\filldraw[border, fill = cred] ($(p102)+(0,-\OFF)$) --++ (vh1) --++ (vh2) --++ ($-\RATIO*(vv2)$) --++ ($-1*(vh2)$) --++ ($-1*(vh1)$) -- ($(p102)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}    	
+	\caption{\label{fig:coin1} \Large{$D'$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cgray}
+	\def\CAC{cgray}
+	\def\CAD{cgray}
+	\def\CAE{cred}
+	\def\CAF{cgray}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cblack}
+	
+	\def\CBA{cgray}
+	\def\CBB{cgray}
+	\def\CBC{cgray}
+	\def\CBD{cgray}
+	\def\CBE{cblue}
+	\def\CBF{cgray}
+	\def\CBG{cblack}
+	\def\CBH{cblue}
+	\def\CBI{cblue}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cwhite}
+	\def\CCC{cblack}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cwhite}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\draw[arrow] ($(p323)-0.5*(vh3)$) -- ($(p303)-0.7*(vh3)$) -- ($(p113)-0.5*(vh1)$);
+	\filldraw[border, fill=cwhite] ($(p100)+(-\OFF,0)$) --++ (vv1) --++ ($-\RATIO*(vh1)$) --++ ($-1*(vv1)$) -- ($(p100)+(-\OFF,0)$);
+	\filldraw[border, fill=cred] ($(p100)+(0,-\OFF)$) --++ (vh1) --++ ($-\RATIO*(vv1)$) --++ ($-1*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}    	
+	\caption{\label{fig:coin2} \Large{$R'$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cgray}
+	\def\CAC{cblack}
+	\def\CAD{cgray}
+	\def\CAE{cred}
+	\def\CAF{cwhite}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cwhite}
+	
+	\def\CBA{cblack}
+	\def\CBB{cgray}
+	\def\CBC{cgray}
+	\def\CBD{cblue}
+	\def\CBE{cblue}
+	\def\CBF{cgray}
+	\def\CBG{cblue}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cwhite}
+	\def\CCC{corange}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cgray}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\draw[arrow] ($(p101)+0.5*(vv2)$) -- ($(p103)+0.3*(vv2)$) -- ($(p202)+0.5*(vv2)$);
+	\filldraw[border, fill=cwhite] ($(p100)+(-\OFF,0)$) --++ (vv1) --++ ($-\RATIO*(vh1)$) --++ ($-1*(vv1)$) -- ($(p100)+(-\OFF,0)$);
+	\filldraw[border, fill=cred] ($(p100)+(0,-\OFF)$) --++ (vh1) --++ ($-\RATIO*(vv1)$) --++ ($-1*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}    
+	\caption{\label{fig:coin3} \Large{$D$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cgray}
+	\def\CAB{cgray}
+	\def\CAC{cwhite}
+	\def\CAD{cgray}
+	\def\CAE{cred}
+	\def\CAF{cwhite}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cwhite}
+	
+	\def\CBA{cblue}
+	\def\CBB{cgray}
+	\def\CBC{cgray}
+	\def\CBD{cblue}
+	\def\CBE{cblue}
+	\def\CBF{cgray}
+	\def\CBG{cblue}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cwhite}
+	\def\CCC{corange}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cgray}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\draw[arrow] ($(p113)-0.5*(vh1)$) -- ($(p303)-0.7*(vh3)$) -- ($(p323)-0.5*(vh3)$);
+	\filldraw[border, fill = cred] ($(p102)+(0,-\OFF)$) --++ (vh1) --++ (vh2) --++ ($-\RATIO*(vv2)$) --++ ($-1*(vh2)$) --++ ($-1*(vh1)$) -- ($(p102)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}    
+	\caption{\label{fig:coin4} \Large{$R$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[b]{\W\columnwidth}
+\centering
+	\def\CAA{cgray}
+	\def\CAB{cgray}
+	\def\CAC{cgray}
+	\def\CAD{cgray}
+	\def\CAE{cred}
+	\def\CAF{cgray}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cred}
+	
+	\def\CBA{cgray}
+	\def\CBB{cgray}
+	\def\CBC{cgray}
+	\def\CBD{cgray}
+	\def\CBE{cblue}
+	\def\CBF{cgray}
+	\def\CBG{cblue}
+	\def\CBH{cblue}
+	\def\CBI{cblue}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cwhite}
+	\def\CCC{cwhite}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cwhite}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    
+	\caption{\label{fig:coin5}}
+\end{subfigure}
+\showto{french}{\caption{\label{fig:coin} Etapes pour placer un coin blanc sans casser la croix blanche.}}
+\showto{english}{\caption{\label{fig:coin} Steps to place a white corner without breaking the white cross.}}
+\end{figure}
+
+\end{document}
