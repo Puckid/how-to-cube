@@ -1,0 +1,592 @@
+\documentclass[0_Main.tex]{subfiles}
+\begin{document}
+
+\showto{french}{\section{Finir la Couronne: Formule du Belge}}
+\showto{english}{\section{End of the Crown: Belgian's formula}}
+
+\showto{french}{La prochaine étape: finir la couronne. Il faut placer maintenant les arrêtes centrales afin de finir les deux premiers étages. Premièrement, à partir de maintenant, le cube sera tenu avec la face blanche vers le bas (comme elle est sensée être finie, elle ne devrait plus changer et il devient donc inutile de l’avoir en visuel). Ici, le premier algorithme entre en jeux, il s’agit de la formule du Belge, qui permet de faire passer une arrête se trouvant sur la face supérieur à une position au milieu du cube (montré en noir). Il faut commencer par trouver une arrête sur la face supérieur qui doit aller dans un de ces emplacements et tourner la face supérieur ($U$) jusqu’à ce que la couleur sur le côté de l’arrête corresponde à celle de la face (comme illustré ci-dessous).}
+
+\showto{english}{The next step: finish the crown. Now you have to place the central edges to finish the first two layers. First, from now on, the cube will be held with the white face down (as it is supposed to be finished, it should not change anymore and it becomes useless to have it in visual). Here, the first algorithm comes into play, it is the Belgian's formula, which allows to pass an edge from the upper face to a position in the middle of the cube (shown in black). Start by finding an edge on the top face that must go into one of these locations and turn the top face ($U$) until the color on the side of the edge matches that of the face (as shown below).}
+
+\begin{figure}[H]
+\def\W{0.10}
+\def\S{0.01mm}
+\centering
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cgray}
+	\def\CAE{cblue}
+	\def\CAF{cblack}
+	\def\CAG{cgray}
+	\def\CAH{cblue}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cblack}
+	\def\CBE{cred}
+	\def\CBF{cgray}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cred}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cgray}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p100)+(0,-\OFF)$) --++ ($3*(vh1)$) --++ ($3*(vh2)$) --++ ($-\RATIO*(vv2)$) --++ ($-3*(vh2)$) --++ ($-3*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}   
+	\caption*{\label{fig:belge1} \LARGE{$U$}} 	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cgray}
+	\def\CAE{cblue}
+	\def\CAF{cgray}
+	\def\CAG{cgray}
+	\def\CAH{cgray}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cgray}
+	\def\CBE{cred}
+	\def\CBF{cgray}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cgray}
+	\def\CCD{cred}
+	\def\CCE{cyellow}
+	\def\CCF{cgray}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p100)+(0,-\OFF)$) --++ ($3*(vh1)$) --++ ($3*(vh2)$) --++ ($-\RATIO*(vv2)$) --++ ($-3*(vh2)$) --++ ($-3*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}    
+	\caption*{\label{fig:belge2} \LARGE{$R$}}	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cwhite}
+	\def\CAD{cgray}
+	\def\CAE{cblue}
+	\def\CAF{cwhite}
+	\def\CAG{cgray}
+	\def\CAH{cgray}
+	\def\CAI{cwhite}
+	
+	\def\CBA{cred}
+	\def\CBB{cgray}
+	\def\CBC{cgray}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cgray}
+	\def\CBG{cred}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cblue}
+	\def\CCD{cred}
+	\def\CCE{cyellow}
+	\def\CCF{cgray}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p100)+(0,-\OFF)$) --++ ($2*(vh1)$) --++ ($-\RATIO*(vv1)$) --++ ($-2*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}    
+	\caption*{\label{fig:belge3} \LARGE{$U'$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cwhite}
+	\def\CAD{cgray}
+	\def\CAE{cblue}
+	\def\CAF{cwhite}
+	\def\CAG{cgray}
+	\def\CAH{cblue}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cgray}
+	\def\CBC{cgray}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cgray}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cwhite}
+	
+	\def\CCA{cgray}
+	\def\CCB{cred}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cgray}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cblue}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p100)+(0,-\OFF)$) --++ ($2*(vh1)$) --++ ($-\RATIO*(vv1)$) --++ ($-2*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}    
+	\caption*{\label{fig:belge4} \LARGE{$R'$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cgray}
+	\def\CAD{cgray}
+	\def\CAE{cblue}
+	\def\CAF{cgray}
+	\def\CAG{cgray}
+	\def\CAH{cblue}
+	\def\CAI{cblue}
+	
+	\def\CBA{cgray}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cgray}
+	\def\CBE{cred}
+	\def\CBF{cgray}
+	\def\CBG{cwhite}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cred}
+	\def\CCC{cred}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cgray}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p100)+(0,-\OFF)$) --++ ($2*(vh1)$) --++ ($-\RATIO*(vv1)$) --++ ($-2*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\filldraw[border, fill = cwhite] ($(p201)+(0,-\OFF)$) --++ ($2*(vh2)$) --++ ($-\RATIO*(vv2)$) --++ ($-2*(vh2)$) -- ($(p201)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}    
+	\caption*{\label{fig:belge5} \LARGE{$U'$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cgray}
+	\def\CAD{cgray}
+	\def\CAE{cblue}
+	\def\CAF{cgray}
+	\def\CAG{cgray}
+	\def\CAH{cgray}
+	\def\CAI{cgray}
+	
+	\def\CBA{cgray}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cgray}
+	\def\CBE{cred}
+	\def\CBF{cgray}
+	\def\CBG{cgray}
+	\def\CBH{cblue}
+	\def\CBI{cblue}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cred}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cred}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p100)+(0,-\OFF)$) --++ ($2*(vh1)$) --++ ($-\RATIO*(vv1)$) --++ ($-2*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\filldraw[border, fill = cwhite] ($(p201)+(0,-\OFF)$) --++ ($2*(vh2)$) --++ ($-\RATIO*(vv2)$) --++ ($-2*(vh2)$) -- ($(p201)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}    
+	\caption*{\label{fig:belge6} \LARGE{$F'$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cgray}
+	\def\CAB{cgray}
+	\def\CAC{cblue}
+	\def\CAD{cgray}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{cgray}
+	\def\CAH{cgray}
+	\def\CAI{cgray}
+	
+	\def\CBA{cwhite}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cwhite}
+	\def\CBE{cred}
+	\def\CBF{cgray}
+	\def\CBG{cgray}
+	\def\CBH{cblue}
+	\def\CBI{cblue}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cred}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cred}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p201)+(0,-\OFF)$) --++ ($2*(vh2)$) --++ ($-\RATIO*(vv2)$) --++ ($-2*(vh2)$) -- ($(p201)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}    
+	\caption*{\label{fig:belge7} \LARGE{$U$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cgray}
+	\def\CAB{cgray}
+	\def\CAC{cblue}
+	\def\CAD{cgray}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{cgray}
+	\def\CAH{cblue}
+	\def\CAI{cblue}
+	
+	\def\CBA{cwhite}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cwhite}
+	\def\CBE{cred}
+	\def\CBF{cgray}
+	\def\CBG{cwhite}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cred}
+	\def\CCC{cred}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cgray}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p201)+(0,-\OFF)$) --++ ($2*(vh2)$) --++ ($-\RATIO*(vv2)$) --++ ($-2*(vh2)$) -- ($(p201)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}    
+	\caption*{\label{fig:belge8} \LARGE{$F$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cgray}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{cgray}
+	\def\CAH{cgray}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cgray}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cgray}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p100)+(0,-\OFF)$) --++ ($3*(vh1)$) --++ ($3*(vh2)$) --++ ($-\RATIO*(vv2)$) --++ ($-3*(vh2)$) --++ ($-3*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}   
+	\caption*{\label{fig:belge9}} 
+\end{subfigure}
+\end{figure}
+
+\showto{french}{Cet algorithme s’appelle la formule du Belge car il y a un moyen mnémotechnique sous la forme d’une petite histoire d’un Belge. La voici:
+\begin{enumerate}
+\item Le belge (l’arrête que l’on voudrait placer) veut aller à droite, comme il est belge et pas très malin, il part à gauche $\rightarrow U$
+\item Comme ses amis (les blancs) voient que  le Belge part dans la mauvaise direction, ils montent le chercher $\rightarrow R$
+\item Du coup, le Belge vient vers ses potes $\rightarrow U'$
+\item Comme les potes voient que le Belge vient dans la bonne direction, ils redescendent $\rightarrow R'$
+\item Mais comme le Belge est bête, il continue tout droit $\rightarrow U'$
+\item Ses autres potes (d’autres blancs) s’en rendent compte et montent le chercher $\rightarrow F'$
+\item Du coup, le Belge revient sur ses pas et rejoint ses potes $\rightarrow U$
+\item Puis pour finir, ils redescendent tous ensemble $\rightarrow F$
+\end{enumerate}
+
+L’ histoire peut s’adapter facilement au cas symétrique présenté ci-dessous. Comme cette formule ressemble énormément à celle présentée précédemment, seule la séquence de mouvement est donnée.}
+
+\showto{english}{This algorithm is called the Belgian's formula because there is a mnemonic means in the form of a small story about a Belgian guy. There it is:
+\begin{enumerate}
+\item The Belgian (which represent the edge that we want to place) wants to go to the right, as he's a Belgian guy, he's dumb, and therefore he goes left. $\rightarrow U$
+\item As his friends (the whites) see the Belgian going to the wrong direction, they come up to get him $\rightarrow R$
+\item Then, the Belgian is coming towards his friends $\rightarrow U'$
+\item As the friends see that the Belgian is going the right way, they go back down $\rightarrow R'$
+\item But, as the Belgian is dumb, he continues straight ahead $\rightarrow U'$
+\item Some other friends (other whites) noticed his mistake and come up to get him $\rightarrow F'$
+\item Then, the Belgian goes back on his steps to meet his friends $\rightarrow U$ 
+\item Finally, they all go back down together $\rightarrow F$
+\end{enumerate}
+
+The story adapts easily to the mirror case presented below. As the formula is similar, only the sequence of movements is given.}
+
+\begin{figure}[H]
+\def\W{0.24}
+\def\WD{0.48}
+\def\S{0.01mm}
+
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cgray}
+	\def\CAE{cblue}
+	\def\CAF{cblack}
+	\def\CAG{cgray}
+	\def\CAH{cgray}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cblack}
+	\def\CBE{cred}
+	\def\CBF{cgray}
+	\def\CBG{cgray}
+	\def\CBH{cred}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cblue}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p100)+(0,-\OFF)$) --++ ($3*(vh1)$) --++ ($3*(vh2)$) --++ ($-\RATIO*(vv2)$) --++ ($-3*(vh2)$) --++ ($-3*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}   
+	\caption*{\label{fig:belgeSym1}} 	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\WD\columnwidth}
+\resizebox{\columnwidth}{!}{$U'$ $F'$ $U$ $F$ $U$ $R$ $U'$ $R'$}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cgray}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{cgray}
+	\def\CAH{cgray}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cgray}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cgray}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p100)+(0,-\OFF)$) --++ ($3*(vh1)$) --++ ($3*(vh2)$) --++ ($-\RATIO*(vv2)$) --++ ($-3*(vh2)$) --++ ($-3*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}   
+	\caption*{\label{fig:belgeSym2}} 
+\end{subfigure}
+\end{figure}
+
+\showto{french}{\begin{conseil}
+Il y a deux cas spéciaux, heureusement, ils se résolvent facilement en utilisant cette même formule du Belge. Le premier cas est que l’arrête se trouve au bon endroit mais dans le mauvais sens. Le deuxième cas arrive quand il n’y a plus d’arrête à placer sur la face supérieur (elles se trouvent dans des emplacements d’autre arrêtes). Pour ces deux cas, la résolution est la même: il suffit d’effectuer une formule du Belge de sorte de placer une arrête quelconque à la place de l’arrête posant problème, cela a comme résultat de faire monter l’arrête à placer.
+\end{conseil}}
+
+\showto{english}{\begin{conseil}
+There are two special cases, fortunately they are easily solved using this same Belgian's formula. The first case is that the edge is in the right place but in the wrong direction. The second case comes when there is no more edge to place on the upper face (they are in other edges' slots). For these two cases, the resolution is the same: it is enough to make a formula of the Belgian so as to place any edge in place of the edge posing problem, this has the result to raise the edge to place.
+\end{conseil}}
+
+\begin{figure}[H]
+\def\W{0.3}
+\def\WD{0.48}
+\def\S{0.1\columnwidth}
+\centering
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cgray}
+	\def\CAE{cblue}
+	\def\CAF{cred}
+	\def\CAG{cgray}
+	\def\CAH{cgray}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cblue}
+	\def\CBE{cred}
+	\def\CBF{cgray}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cgray}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p100)+(0,-\OFF)$) --++ ($3*(vh1)$) --++ ($3*(vh2)$) --++ ($-\RATIO*(vv2)$) --++ ($-3*(vh2)$) --++ ($-3*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}   
+	\caption{\label{fig:belgeSp1}} 	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{corange}
+	\def\CAE{cblue}
+	\def\CAF{corange}
+	\def\CAG{cgray}
+	\def\CAH{cgray}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cblue}
+	\def\CBE{cred}
+	\def\CBF{cblue}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cgray}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p100)+(0,-\OFF)$) --++ ($3*(vh1)$) --++ ($3*(vh2)$) --++ ($-\RATIO*(vv2)$) --++ ($-3*(vh2)$) --++ ($-3*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}   
+	\caption{\label{fig:belgeSp2}} 	
+\end{subfigure}
+\showto{french}{\caption{\label{fig:belgeSp} Les deux cas spéciaux.}}
+\showto{english}{\caption{\label{fig:belgeSp} Both special cases.}}
+\end{figure}
+
+\end{document}
