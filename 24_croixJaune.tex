@@ -1,0 +1,536 @@
+\documentclass[0_Main.tex]{subfiles}
+\begin{document}
+
+\showto{french}{\section{Croix Jaune}}
+\showto{english}{\section{Yellow Cross}}
+\begin{wrapfigure}{r}{0.42\columnwidth}
+\vspace{-20pt}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{cgray}
+	\def\CAH{cgray}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cgray}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\resizebox{0.34\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    
+	%\vspace{-20pt}
+	\showto{french}{\caption{\label{fig:croixJaune} Couronne finie.}}
+	\showto{english}{\caption{\label{fig:croixJaune} Finished crown.}}
+	\vspace{-10pt}
+\end{wrapfigure}
+
+\showto{french}{A ce stade, les deux premiers étages devraient être finis et votre cube devrait ressembler à celui ci-contre. Pour les prochaines représentations, une vue de dessus pourra être choisie. Les couleurs sur le côté des cubes sont visibles avec les petits rectangles sur les côtés (voir p. 8). Et aussi, chaque algorithme présenté après ce point commence avec la face jaune sur le dessus, donc s’il faut tourner le cube afin de l’avoir dans la bonne position, faites en sorte de toujours garder la face jaune dessus.
+
+Comme pour le début du cube, la résolution de la dernière face commence en créant une croix, pour commencer avec les côtés ne correspondant par forcément aux centres (contrairement à la première étape).
+
+Nous nous intéressons donc uniquement aux arêtes de la face jaune, donc sans prendre en compte les coins. Par chance, il n’y a que trois cas possibles arrivé à ce stade, donc si votre cube se retrouve dans une autre position que l’un des trois cas représentés ci-dessous, il doit y avoir une erreur dans la couronne, ou si votre cube a déjà été démonté, il se peut qu’il ait été remonté faux.}
+
+\showto{english}{At this point, the first two layers should be finished and your cube should look like the one beside. For the next representation, a view from above can be chosen. The colors on the side of the cubes are visible with the small rectangles on the sides (see page 8). And also, every algorithm presented after this point starts with the yellow face on the top, so if you have to turn the cube to have it in the right position, make sure to always keep the yellow face on top.
+
+As for the beginning of the cube, the resolution of the last face begins by creating a cross, to start with the sides not necessarily corresponding to the centers (unlike the first step).
+
+We are therefore interested only in the edges of the yellow face, so without taking into account the corners. Luckily, there are only three possible cases happening at this point, so if your cube is in a different position than one of the three cases shown below, there must be an error in the crown, or if your cube has already been disassembled, it may have gone wrong.}
+
+\begin{figure}[H]
+\def\W{0.24}
+\def\S{0.01mm}
+\centering
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{cgray}
+	\def\CAH{cyellow}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cgray}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}   
+	\showto{french}{\caption*{\label{fig:croixBarre} \LARGE{Barre}}}
+	\showto{english}{\caption*{\label{fig:croixBarre} \LARGE{Bar}}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{cgray}
+	\def\CAH{cyellow}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cgray}
+	\def\CCH{cyellow}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    
+	\caption*{\label{fig:croixL} \LARGE{L}}	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{cgray}
+	\def\CAH{cyellow}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cyellow}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cgray}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    
+	\caption*{\label{fig:croixPoint} \LARGE{Point}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{cgray}
+	\def\CAH{cgray}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cyellow}
+	\def\CCC{cgray}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cgray}
+	\def\CCH{cyellow}
+	\def\CCI{cgray}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    
+	\showto{french}{\caption*{\label{fig:croixEnd} \LARGE{Croix}}}
+	\showto{english}{\caption*{\label{fig:croixEnd} \LARGE{Cross}}}
+\end{subfigure}
+\end{figure}
+
+\showto{french}{La première étape est de déterminer dans lequel de ces trois cas le cube se trouve. Ensuite, il faut placer le cube dans la bonne position avant de commencer l’algorithme en trois parties. Cet algorithme est en trois parties, car  seules les premières et troisièmes parties sont différentes et il ne s’agit en fait que d’un mouvement préliminaire et un mouvement final (qui est l’inverse du mouvement préliminaire). La grande partie de l’algorithme est strictement identique pour les trois cas.}
+
+\showto{english}{The first step is to determine in which of these three cases the cube is. Next, place the cube in the correct position before starting the three-part algorithm. This algorithm is in three parts, because only the first and third parts are different and it is in fact only a preliminary movement and a final movement (which is the inverse of the preliminary movement). Much of the algorithm is strictly the same for all three cases.}
+
+\showto{french}{\subsection{Cas Barre et L}}
+\showto{english}{\subsection{Bar and L cases}}
+
+\showto{french}{Nous commençons par regarder les cas pour les cas “Barre” et “L”. Le “point“ se résout par la combinaison des deux autres.}
+
+\showto{english}{We start with solution for the "Bar" and "L" cases. The "point" is solved by the combination of these two}
+
+\def\W{0.13}
+\begin{tabular}[b]{r | c c p{\W\columnwidth} c c c p{\W\columnwidth}}
+	& \showto{french}{Placement} \showto{english}{Starting point} & & \showto{french}{Mouvement préliminaire} \showto{english}{Preliminary move} & &	\showto{french}{Gâchette} \showto{english}{Trigger} & & \showto{french}{Mouvement final} \showto{english}{Final move}	\\ \hline
+\showto{french}{\Large{Barre}} \showto{english}{\Large{Bar}} & \resizebox{\W\columnwidth}{!}
+	{
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{cgray}
+	\def\CAH{cyellow}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cgray}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}	
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}
+& \Large{$F$} & 	\resizebox{\W\columnwidth}{!}
+	{
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cgray}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cyellow}
+	\def\CAG{cblue}
+	\def\CAH{cblue}
+	\def\CAI{cgray}
+	
+	\def\CBA{cgray}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cgray}
+	\def\CBE{cred}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{corange}
+	\def\CCB{corange}
+	\def\CCC{cgray}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    
+& \Large{$R$ $U$ $R'$ $U'$} & 	\resizebox{\W\columnwidth}{!}
+	{
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cgray}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cgray}
+	\def\CAG{cblue}
+	\def\CAH{cblue}
+	\def\CAI{cgray}
+	
+	\def\CBA{cgray}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cyellow}
+	\def\CBE{cred}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{corange}
+	\def\CCB{corange}
+	\def\CCC{cgray}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cgray}
+	\def\CCH{cyellow}
+	\def\CCI{cgray}
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}
+& \Large{$F'$} &	\resizebox{\W\columnwidth}{!}
+	{
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{cgray}
+	\def\CAH{cgray}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cyellow}
+	\def\CCC{cgray}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cgray}
+	\def\CCH{cyellow}
+	\def\CCI{cgray}
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}
+\\
+\Large{L} &	\resizebox{\W\columnwidth}{!}
+	{
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{cgray}
+	\def\CAH{cyellow}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cyellow}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    	
+& \Large{$f$} &	\resizebox{\W\columnwidth}{!}
+	{
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cgray}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cgray}
+	\def\CAG{cblue}
+	\def\CAH{cblue}
+	\def\CAI{cgray}
+	
+	\def\CBA{cgray}
+	\def\CBB{cyellow}
+	\def\CBC{cred}
+	\def\CBD{cyellow}
+	\def\CBE{cyellow}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{corange}
+	\def\CCB{corange}
+	\def\CCC{cgray}
+	\def\CCD{corange}
+	\def\CCE{corange}
+	\def\CCF{cyellow}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    	
+& \Large{$R$ $U$ $R'$ $U'$} &	\resizebox{\W\columnwidth}{!}
+	{
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cgray}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cgray}
+	\def\CAG{cblue}
+	\def\CAH{cblue}
+	\def\CAI{cgray}
+	
+	\def\CBA{cgray}
+	\def\CBB{cyellow}
+	\def\CBC{cred}
+	\def\CBD{cyellow}
+	\def\CBE{cyellow}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cyellow}
+	\def\CBI{cgray}
+	
+	\def\CCA{corange}
+	\def\CCB{corange}
+	\def\CCC{cgray}
+	\def\CCD{corange}
+	\def\CCE{corange}
+	\def\CCF{cgray}
+	\def\CCG{cgray}
+	\def\CCH{cyellow}
+	\def\CCI{cgray}	
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    	
+& \Large{$f'$} &	\resizebox{\W\columnwidth}{!}
+	{
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{cgray}
+	\def\CAH{cgray}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cyellow}
+	\def\CCC{cgray}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cgray}
+	\def\CCH{cyellow}
+	\def\CCI{cgray}
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}
+\end{tabular}
+
+\showto{french}{\subsection{Cas Point}}
+\showto{english}{\subsection{Point case}}
+
+\showto{french}{Pour résoudre le cas "Point", il suffit de faire la même méthode que pour le cas "Barre" (le sens de départ n’est pas important de par la symétrie). Une fois la formule du cas "Barre" exécutée, le "Point" se sera transformé en cas "L". Il faut donc finir la croix avec la formule du cas "L".}
+
+\showto{english}{To solve the ''Point'' case, it is enough to do the same method as for the case "Bar" (the direction of departure is not important by the symmetry). Once the "Bar" case formula is executed, the "Point" will be transformed into the "L" case. You can finish the cross with the formula of the case "L"}
+
+\begin{conseil}
+\showto{french}{Voici un petit récapitulatif:}
+\showto{english}{Here is a small recap:}
+\begin{description}
+\showto{french}{
+\item[Barre:] Tourner la face de devant + Gâchette
+\item[L:] Tourner les deux faces de devant + Gâchette
+\item[Point:] Barre + L
+}
+\showto{english}{
+\item[Bar:] Rotate front face + Trigger
+\item[L:] Rotate both front face + Trigger
+\item[Point:] Bar + L
+}
+\end{description}
+\end{conseil}
+\end{document}
