@@ -1,0 +1,271 @@
+\documentclass[0_Main.tex]{subfiles}
+\begin{document}
+
+\showto{french}{\section{Positionner la Croix Jaune}}
+\showto{english}{\section{Place the yellow cross}}
+
+
+\showto{french}{Maintenant, il faut faire en sorte que les bords de la croix jaune correspondent avec les centres. L’observation est un peu plus compliquée ici, il faut tourner la face du haut (U) jusqu’à ce que l’on se retrouve avec un et un seul bord correspondant au centre, comme présenté ci-dessous. Les couleurs des centres des faces sont indiquées par les long rectangles.}
+
+\showto{english}{Now, we must make sure that the edges of the yellow cross correspond with the centers. The observation is a little more complicated here, you have to turn the face of the top (U) until you end up with one and only one edge corresponding to the center, as shown below. The colors of the centers of the faces are indicated by the long rectangles.}
+
+\begin{figure}[H]
+\def\W{0.3}
+\def\S{1mm}
+\centering
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\COA{cgray}
+	\def\COB{cyellow}
+	\def\COC{cgray}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cgray}
+	\def\COH{cyellow}
+	\def\COI{cgray}
+	
+	\def\CAA{cgray}
+	\def\CAB{corange}
+	\def\CAC{cgray}
+	\def\CAD{corange}
+	
+	\def\CBA{cgray}
+	\def\CBB{cgreen}
+	\def\CBC{cgray}
+	\def\CBD{cblue}
+	
+	\def\CCA{cgray}
+	\def\CCB{cblue}
+	\def\CCC{cgray}
+	\def\CCD{cred}
+	
+	\def\CDA{cgray}
+	\def\CDB{cred}
+	\def\CDC{cgray}
+	\def\CDD{cgreen}
+
+	\showto{french}{\caption*{\Large{Demi-Formule Finale}}}
+	\showto{english}{\caption*{\Large{Half final algorithm}}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[arrow] ($(p013)+(0, 0.5*\H)$) -- ($(p010)+(0, 0.5*\H)$);
+	\draw[arrow] ($(p010)+(0, 0.5*\H)$) -- ($(p031)+(0.5*\H, 0)$);
+	\draw[arrow] ($(p031)+(0.5*\H, 0)$) -- ($(p013)+(0, 0.5*\H)$);
+	\end{tikzpicture}
+	}    	
+	\caption*{\Large{$R$ $U^2$ $R'$ $U'$ $R$ $U'$ $R'$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\COA{cgray}
+	\def\COB{cyellow}
+	\def\COC{cgray}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cgray}
+	\def\COH{cyellow}
+	\def\COI{cgray}
+	
+	\def\CAA{cgray}
+	\def\CAB{corange}
+	\def\CAC{cgray}
+	\def\CAD{corange}
+	
+	\def\CBA{cgray}
+	\def\CBB{cred}
+	\def\CBC{cgray}
+	\def\CBD{cblue}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgreen}
+	\def\CCC{cgray}
+	\def\CCD{cred}
+	
+	\def\CDA{cgray}
+	\def\CDB{cblue}
+	\def\CDC{cgray}
+	\def\CDD{cgreen}
+
+	\showto{french}{\caption*{\Large{Demi-Formule Finale'}}}
+	\showto{english}{\caption*{\Large{Half final algorithm'}}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[arrow] ($(p010)+(0, 0.5*\H)$) -- ($(p013)+(0, 0.5*\H)$);
+	\draw[arrow] ($(p031)+(0.5*\H, 0)$) -- ($(p010)+(0, 0.5*\H)$);
+	\draw[arrow] ($(p013)+(0, 0.5*\H)$) -- ($(p031)+(0.5*\H, 0)$);
+	\end{tikzpicture}
+	}    	
+	\caption*{\Large{$L'$ $U^2$ $L$ $U$ $L'$ $U$ $L$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{cgray}
+	\def\CAH{cblue}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cred}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cyellow}
+	\def\CCC{cgray}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cgray}
+	\def\CCH{cyellow}
+	\def\CCI{cgray}
+	\showto{french}{\caption*{\Large{Résultat}}}
+	\showto{english}{\caption*{\Large{Result}}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}   
+\end{subfigure}
+\end{figure}
+
+\begin{figure}[H]
+\def\W{0.3}
+\def\S{1mm}
+\centering
+\begin{subfigure}[c]{\W\columnwidth}
+\centering
+	\def\COA{cgray}
+	\def\COB{cyellow}
+	\def\COC{cgray}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cgray}
+	\def\COH{cyellow}
+	\def\COI{cgray}
+	
+	\def\CAA{cgray}
+	\def\CAB{corange}
+	\def\CAC{cgray}
+	\def\CAD{corange}
+	
+	\def\CBA{cgray}
+	\def\CBB{cgreen}
+	\def\CBC{cgray}
+	\def\CBD{cblue}
+	
+	\def\CCA{cgray}
+	\def\CCB{cred}
+	\def\CCC{cgray}
+	\def\CCD{cred}
+	
+	\def\CDA{cgray}
+	\def\CDB{cblue}
+	\def\CDC{cgray}
+	\def\CDD{cgreen}
+
+	\resizebox{0.8\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[arrow,<->] ($(p013)+(0, 0.5*\H)$) -- ($(p010)+(0, 0.5*\H)$);
+	\end{tikzpicture}
+	}    	
+
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[c]{0.65\columnwidth}
+\begin{conseil}
+
+\showto{french}{Il existe un cas où il n’est pas possible de n’avoir qu’un seul coté de la croix qui correspond au centre, il y a toujours deux branches opposées qui sont justes et les deux autres fausses, comme sur l’image ci-contre. Ce cas se résoud en exécutant une demi-fourmule finale dans n’importe quelle position.}
+
+\showto{english}{There is a case where it is not possible to have only one side of the cross that corresponds to the center, there are always two opposing branches that are well placed and the other two are wrongly placed, as in the picture on the left. This case is solved by executing a half final algorithm in any position.}
+
+\end{conseil}
+\end{subfigure}
+\end{figure}
+
+\begin{figure}[H]
+\def\S{0.5mm}
+\begin{subfigure}[c]{0.65\columnwidth}
+\begin{conseil}
+
+\showto{french}{Un moyen visuel pour se souvenir plus facilement de cette demi-formule finale est d’observer la paire de cube formant une arête de la couronne qui se deplace sur la face supérieure (je parle d’une paire comme celle mise en noire sur le dessin de gauche).}
+
+\showto{english}{A visual way to remember more easily this half final formula is to observe the pair of cube forming an edge of the crown which moves on the upper face (I speak of a pair like the one in black on the drawing from the left).}
+
+\end{conseil}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[c]{0.3\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblack}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cblack}
+	\def\CAG{cgray}
+	\def\CAH{cgray}
+	\def\CAI{cgray}
+	
+	\def\CBA{cblack}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cblack}
+	\def\CBE{cred}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cyellow}
+	\def\CCC{cgray}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cgray}
+	\def\CCH{cyellow}
+	\def\CCI{cgray}
+	\resizebox{0.8\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}    
+\end{subfigure}
+\end{figure}
+
+\begin{conseil}
+
+\showto{french}{Si jamais l’apprentissage de deux formules d’un coup fait beaucoup, apprendre seulement la première, il suffit de l’exécuter deux fois pour avoir l’équivalent de la deuxième. Par contre, ces formules s’appellent “Demi-Formule finale“ car pour la toute dernière partie de la résolution, il faut exécuter ces deux formules à la suite, donc il faudra de toute façon apprendre la deuxième à un moment ou à un autre. Souvenez-vous que la deuxième formule correspond au symétrique de la première.}
+
+\showto{english}{If learning two formulas at once makes a lot, you could memorize only the first one and apply it twice to get the equivalent of the second one. On the other hand, these formulas are called "half final algorithm" because for the very last part of the resolution, it is necessary to execute these two formulas one after the other, so it will be necessary anyway to learn the second at one time or another. Remember that the second formula corresponds to the symmetrical of the first.}
+
+\end{conseil}
+\begin{conseil}
+
+\showto{french}{Pour savoir quelle formule exécuter, regarder la couleur sur un côté de la croix. Si cette couleur est l’opposée de celle du centre (opposée, c’est-à-dire la couleur de la face se trouvant en face: \textcolor{cgreen}{vert} est l’opposé de \textcolor{cblue}{bleu}; \textcolor{cred}{rouge} est l’opposé de \textcolor{corange}{orange}; \colorbox{cblack}{\textcolor{cwhite}{blanc}} est l’opposé de \colorbox{cblack}{\textcolor{yellow}{jaune}}) cela veut dire qu’il faut faire la formule de ce coté. Sinon, il faut faire la formule depuis l'autre coté.}
+
+\showto{english}{To know which formula to execute, look at the color on one side of the cross. If this color is the opposite of the color of the center (by opposite I mean that its color is the same as the opposite face: \textcolor{cgreen}{green} is the opposite of \textcolor{cblue}{blue}; \textcolor{cred}{red} is the opposite of \textcolor{corange}{orange}; \colorbox{cblack}{\textcolor{cwhite}{white}} is the opposite of \colorbox{cblack}{\textcolor{yellow}{yellow}}). This means that you have to make the formula on this side. Otherwise, you have to make the formula from the other side.}
+
+\end{conseil}
+
+\clearpage
+
+\end{document}
