@@ -1,0 +1,486 @@
+\documentclass[0_Main.tex]{subfiles}
+\begin{document}
+
+\showto{french}{\section{Orienter les Coins}}
+\showto{english}{\section{Rotate the corners}}
+
+\showto{french}{Et voici la dernière étape! A ce stade, les coins devrait tous être à la bonne place, mais pas dans la bonne direction. Il ne reste plus qu’à retourner ces coins, et le Rubik’s cube aura retrouvé son ordre originel!
+
+Cette dernière étape se fait de nouveau à l’aide d’une seule formule: la formule finale. Et son apprentissage est grandement facilité car il s’agit des deux demi-formule finales mise bout-à-bout. Cette formule a pour effet de retourner les deux coins d’un côté de sorte que les faces se trouvant sur le côté, se retrouve sur le dessus.}
+
+\showto{english}{}
+
+\begin{figure}[H]
+\def\W{0.33}
+\def\S{1mm}
+\centering
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\COA{cyellow}
+	\def\COB{cyellow}
+	\def\COC{cblue}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cyellow}
+	\def\COH{cyellow}
+	\def\COI{cgreen}
+	
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cred}
+	\def\CAD{cblue}
+	
+	\def\CBA{cyellow}
+	\def\CBB{cred}
+	\def\CBC{cyellow}
+	\def\CBD{cred}
+	
+	\def\CCA{cred}
+	\def\CCB{cgreen}
+	\def\CCC{cgreen}
+	\def\CCD{cgreen}
+	
+	\def\CDA{corange}
+	\def\CDB{corange}
+	\def\CDC{corange}
+	\def\CDD{corange}
+
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[arrow] ($(p003)+(1.2*\H, 0.5*\H)$) -- ($(p003)+(\HS, 0.5*\H)$);
+	\draw[arrow] ($(p023)+(1.2*\H, 0.5*\H)$) -- ($(p023)+(\HS, 0.5*\H)$);
+	\end{tikzpicture}
+	}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{0.6\columnwidth}
+\showto{french}{\Large{Formule Finale:\\ \textcolor{cgreen}{$R$ $U^2$ $R'$ $U'$ $R$ $U'$ $R'$} \textcolor{corange}{$L'$ $U^2$ $L$ $U$ $L'$ $U$ $L$}}}
+\showto{english}{\Large{Final algorithm: \\ \textcolor{cgreen}{$R$ $U^2$ $R'$ $U'$ $R$ $U'$ $R'$} \textcolor{corange}{$L'$ $U^2$ $L$ $U$ $L'$ $U$ $L$}}}
+\end{subfigure}
+\end{figure}
+
+\showto{french}{Il y a par contre de nombreux cas de figure différents, heureusement, tous se résolvent en n’utilisant que cette formule finale et quelques astuces. Les flèches roses indiquent la position des faces qui devraient se trouver sur la face supérieur, elles sont utilisées pour le repérage.}
+
+\showto{english}{}
+
+\begin{figure}[H]
+\def\W{0.33}
+\def\S{1mm}
+\centering
+\begin{subfigure}[c]{\W\columnwidth}
+\centering
+	\def\COA{cyellow}
+	\def\COB{cyellow}
+	\def\COC{cred}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cyellow}
+	\def\COH{cyellow}
+	\def\COI{cred}
+	
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cyellow}
+	\def\CAD{cblue}
+	
+	\def\CBA{cblue}
+	\def\CBB{cred}
+	\def\CBC{cblue}
+	\def\CBD{cred}
+	
+	\def\CCA{cyellow}
+	\def\CCB{cgreen}
+	\def\CCC{cgreen}
+	\def\CCD{cgreen}
+	
+	\def\CDA{corange}
+	\def\CDB{corange}
+	\def\CDC{corange}
+	\def\CDD{corange}
+
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[arrow] ($(p002)+(0.5*\H, -1.2*\H)$) -- ($(p002)+(0.5*\H, -\HS)$);
+	\draw[arrow] ($(p032)+(0.5*\H, 1.2*\H)$) -- ($(p032)+(0.5*\H, \HS)$);	
+	\end{tikzpicture}
+	}
+	\showto{french}{\caption*{Rotation du cube}}
+	\showto{english}{\caption*{Rotation of the cube}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[c]{0.4\columnwidth}
+\centering
+	\def\COA{cred}
+	\def\COB{cred}
+	\def\COC{cgreen}
+	\def\COD{cred}
+	\def\COE{cred}
+	\def\COF{cred}
+	\def\COG{cred}
+	\def\COH{cred}
+	\def\COI{cblue}
+	
+	\def\CAA{cgreen}
+	\def\CAB{cgreen}
+	\def\CAC{cyellow}
+	\def\CAD{cgreen}
+	
+	\def\CBA{cred}
+	\def\CBB{cyellow}
+	\def\CBC{cred}
+	\def\CBD{cyellow}
+	
+	\def\CCA{cyellow}
+	\def\CCB{cblue}
+	\def\CCC{cblue}
+	\def\CCD{cblue}
+	
+	\def\CDA{cwhite}
+	\def\CDB{cwhite}
+	\def\CDC{cwhite}
+	\def\CDD{cwhite}
+
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[arrow] ($(p003)+(1.2*\H, 0.5*\H)$) -- ($(p003)+(\HS, 0.5*\H)$);
+	\draw[arrow] ($(p023)+(1.2*\H, 0.5*\H)$) -- ($(p023)+(\HS, 0.5*\H)$);
+	\end{tikzpicture}
+	}
+	\showto{french}{\caption*{Formule finale}}
+	\showto{english}{\caption*{Final algorithm}}
+\end{subfigure}
+\showto{french}{\caption{Cas inversé}}
+\showto{english}{\caption{Inversed case}}
+\end{figure}
+
+\begin{figure}[H]
+\def\W{0.33}
+\def\S{1mm}
+\centering
+\begin{subfigure}[c]{0.47\columnwidth}
+\centering
+	\def\COA{cblue}
+	\def\COB{cyellow}
+	\def\COC{cblue}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cgreen}
+	\def\COH{cyellow}
+	\def\COI{cgreen}
+	
+	\def\CAA{corange}
+	\def\CAB{cblue}
+	\def\CAC{cred}
+	\def\CAD{cblue}
+	
+	\def\CBA{cyellow}
+	\def\CBB{cred}
+	\def\CBC{cyellow}
+	\def\CBD{cred}
+	
+	\def\CCA{cred}
+	\def\CCB{cgreen}
+	\def\CCC{corange}
+	\def\CCD{cgreen}
+	
+	\def\CDA{cyellow}
+	\def\CDB{corange}
+	\def\CDC{cyellow}
+	\def\CDD{corange}
+
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[arrow] ($(p003)+(1.2*\H, 0.5*\H)$) -- ($(p003)+(\HS, 0.5*\H)$);
+	\draw[arrow] ($(p023)+(1.2*\H, 0.5*\H)$) -- ($(p023)+(\HS, 0.5*\H)$);
+	\draw[arrow] ($(p000)+(-1.2*\H, 0.5*\H)$) -- ($(p000)+(-\HS, 0.5*\H)$);
+	\draw[arrow] ($(p020)+(-1.2*\H, 0.5*\H)$) -- ($(p020)+(-\HS, 0.5*\H)$);
+	\end{tikzpicture}
+	}
+	\showto{french}{\caption*{2 Formules Finales}}
+	\showto{english}{\caption*{2 final algorithms}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[c]{0.4\columnwidth}
+\centering
+	\def\COA{cblue}
+	\def\COB{cyellow}
+	\def\COC{cred}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cgreen}
+	\def\COH{cyellow}
+	\def\COI{cred}
+	
+	\def\CAA{corange}
+	\def\CAB{cblue}
+	\def\CAC{cyellow}
+	\def\CAD{cblue}
+	
+	\def\CBA{cblue}
+	\def\CBB{cred}
+	\def\CBC{cgreen}
+	\def\CBD{cred}
+	
+	\def\CCA{cyellow}
+	\def\CCB{cgreen}
+	\def\CCC{corange}
+	\def\CCD{cgreen}
+	
+	\def\CDA{cyellow}
+	\def\CDB{corange}
+	\def\CDC{cyellow}
+	\def\CDD{corange}
+
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[arrow] ($(p002)+(0.5*\H, -1.2*\H)$) -- ($(p002)+(0.5*\H, -\HS)$);
+	\draw[arrow] ($(p032)+(0.5*\H, 1.2*\H)$) -- ($(p032)+(0.5*\H, \HS)$);	
+	\draw[arrow] ($(p000)+(-1.2*\H, 0.5*\H)$) -- ($(p000)+(-\HS, 0.5*\H)$);
+	\draw[arrow] ($(p020)+(-1.2*\H, 0.5*\H)$) -- ($(p020)+(-\HS, 0.5*\H)$);
+	\end{tikzpicture}
+	}
+	\showto{french}{\caption*{2 Formules Finales}}
+	\showto{english}{\caption*{2 final algorithms}}
+\end{subfigure}
+\caption{Cas double}
+\end{figure}
+
+
+
+\begin{figure}[H]
+\def\W{0.28}
+\def\S{1mm}
+\centering
+\begin{subfigure}[c]{\W\columnwidth}
+\centering
+	\def\COA{cyellow}
+	\def\COB{cyellow}
+	\def\COC{cred}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cblue}
+	\def\COH{cyellow}
+	\def\COI{cyellow}
+	
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cgreen}
+	\def\CAD{cred}
+	
+	\def\CBA{cyellow}
+	\def\CBB{cgreen}
+	\def\CBC{cgreen}
+	\def\CBD{cgreen}
+	
+	\def\CCA{corange}
+	\def\CCB{corange}
+	\def\CCC{cyellow}
+	\def\CCD{corange}
+	
+	\def\CDA{corange}
+	\def\CDB{cblue}
+	\def\CDC{cblue}
+	\def\CDD{cblue}
+
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\end{tikzpicture}
+	}
+	\caption*{$B'$}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[c]{0.33\columnwidth}
+\centering
+	\def\COA{cyellow}
+	\def\COB{cyellow}
+	\def\COC{cred}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cblue}
+	\def\COH{cblue}
+	\def\COI{corange}
+	
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cgreen}
+	\def\CAD{cred}
+	
+	\def\CBA{cyellow}
+	\def\CBB{cgreen}
+	\def\CBC{cblue}
+	\def\CBD{cgreen}
+	
+	\def\CCA{cyellow}
+	\def\CCB{corange}
+	\def\CCC{corange}
+	\def\CCD{corange}
+	
+	\def\CDA{cwhite}
+	\def\CDB{cblue}
+	\def\CDC{cblue}
+	\def\CDD{cblue}
+
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[arrow] ($(p003)+(1.2*\H, 0.5*\H)$) -- ($(p003)+(\HS, 0.5*\H)$);
+	\draw[arrow] ($(p023)+(1.2*\H, 0.5*\H)$) -- ($(p023)+(\HS, 0.5*\H)$);
+	\end{tikzpicture}
+	}
+	\showto{french}{\caption*{Formule finale}}
+	\showto{english}{\caption*{Final algorithm}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[c]{\W\columnwidth}
+\centering
+	\def\COA{cyellow}
+	\def\COB{cyellow}
+	\def\COC{cyellow}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cblue}
+	\def\COH{cblue}
+	\def\COI{cblue}
+	
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cred}
+	
+	\def\CBA{cgreen}
+	\def\CBB{cgreen}
+	\def\CBC{cyellow}
+	\def\CBD{cgreen}
+	
+	\def\CCA{corange}
+	\def\CCB{corange}
+	\def\CCC{corange}
+	\def\CCD{corange}
+	
+	\def\CDA{cwhite}
+	\def\CDB{cblue}
+	\def\CDC{cblue}
+	\def\CDD{cblue}
+
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\end{tikzpicture}
+	}
+	\caption*{$B$}
+\end{subfigure}
+\showto{french}{\caption{2 coins en diagonal}}
+\showto{english}{\caption{2 corner diagonaly}}
+\end{figure}
+
+
+
+\begin{figure}[H]
+\def\W{0.33}
+\def\S{1mm}
+\centering
+\begin{subfigure}[c]{0.34\columnwidth}
+\centering
+	\def\COA{cgreen}
+	\def\COB{cyellow}
+	\def\COC{corange}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cyellow}
+	\def\COH{cyellow}
+	\def\COI{cblue}
+	
+	\def\CAA{cred}
+	\def\CAB{cgreen}
+	\def\CAC{cyellow}
+	\def\CAD{cgreen}
+	
+	\def\CBA{cgreen}
+	\def\CBB{corange}
+	\def\CBC{cyellow}
+	\def\CBD{corange}
+	
+	\def\CCA{corange}
+	\def\CCB{cblue}
+	\def\CCC{cblue}
+	\def\CCD{cblue}
+	
+	\def\CDA{cred}
+	\def\CDB{cred}
+	\def\CDC{cyellow}
+	\def\CDD{cred}
+
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[arrow] ($(p003)+(1.2*\H, 0.5*\H)$) -- ($(p003)+(\HS, 0.5*\H)$);
+	\draw[arrow] ($(p023)+(1.2*\H, 0.5*\H)$) -- ($(p023)+(\HS, 0.5*\H)$);
+	\end{tikzpicture}
+	}
+	\showto{french}{\caption*{Formule finale}}
+	\showto{english}{\caption*{Final algorithm}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[c]{0.38\columnwidth}
+\centering
+	\def\COA{cgreen}
+	\def\COB{cyellow}
+	\def\COC{cgreen}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cyellow}
+	\def\COH{cyellow}
+	\def\COI{cyellow}
+	
+	\def\CAA{cred}
+	\def\CAB{cgreen}
+	\def\CAC{corange}
+	\def\CAD{cgreen}
+	
+	\def\CBA{cyellow}
+	\def\CBB{corange}
+	\def\CBC{corange}
+	\def\CBD{corange}
+	
+	\def\CCA{cblue}
+	\def\CCB{cblue}
+	\def\CCC{cblue}
+	\def\CCD{cblue}
+	
+	\def\CDA{cred}
+	\def\CDB{cred}
+	\def\CDC{cyellow}
+	\def\CDD{cred}
+
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[arrow] ($(p000)+(-1.2*\H, 0.5*\H)$) -- ($(p000)+(-\HS, 0.5*\H)$);
+	\draw[arrow] ($(p003)+(1.2*\H, 0.5*\H)$) -- ($(p003)+(\HS, 0.5*\H)$);
+	\end{tikzpicture}
+	}
+	\showto{french}{\caption*{Formule finale inversée}}
+	\showto{english}{\caption*{Inverted final algorithm}}
+\end{subfigure}
+\showto{french}{\caption{Cas 3 coins}}
+\showto{english}{\caption{3 corners case}}
+\end{figure}
+
+\clearpage
+
+\end{document}
