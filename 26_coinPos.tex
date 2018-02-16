@@ -1,0 +1,531 @@
+\documentclass[0_Main.tex]{subfiles}
+\begin{document}
+
+\showto{french}{\section{Positionner les coins}}
+\showto{english}{\section{Place corners}}
+
+\begin{wrapfigure}{l}{0.42\columnwidth}
+\vspace{-10pt}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{corange}
+	\def\CAH{cblue}
+	\def\CAI{cyellow}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cred}
+	\def\CBG{cblue}
+	\def\CBH{cred}
+	\def\CBI{cyellow}
+	
+	\def\CCA{cyellow}
+	\def\CCB{cyellow}
+	\def\CCC{cred}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cgreen}
+	\def\CCH{cyellow}
+	\def\CCI{cblue}
+	\resizebox{0.32\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cgreen] (p120) --++ ($1*(vv1)$) --++ ($1*(vv3)$) --++ ($-\RATIO*(vh3)$) --++ ($-1*(vv3)$) --++ ($-1*(vv1)$) -- (p120);
+	\filldraw[border, fill = cred] (p320) --++ ($1*(vv3)$) --++ ($-\RATIO*(vh3)$) --++ ($-1*(vv3)$) -- (p320);
+	\filldraw[border, fill = cyellow] (p330) --++ ($1*(vh3)$) --++ ($\RATIO*(vv3)$) --++ ($-1*(vh3)$) -- (p320);
+	\filldraw[border, fill = corange] (p332) --++ ($1*(vh3)$) --++ ($-1*(vv2)$) --++ ($\RATIO*(vh2)$) --++ ($1*(vv2)$) --++ ($-1*(vh3)$) -- (p332);	
+	\end{tikzpicture}
+	}    
+	%\vspace{-20pt}
+	\showto{french}{\caption{\label{fig:coinJ1} Le coin jaune/bleu/rouge est le seul à se trouver à la bonne place même si son orientation est fausse.}}
+	\showto{english}{\caption{\label{fig:coinJ1} The corner yellow/blue/red is the only one in the proper spot, its orientation is wrong, but we don't care at this step.}}
+	\vspace{-0pt}
+\end{wrapfigure}
+
+\showto{french}{Avant dernière étape! Il ne reste plus qu’à s’occuper des coins, premièrement on les place aux bons endroits, ensuite, la dernière étape sera de les retourner dans la bonne orientation.
+
+De nouveau, l’observation n’est pas aisée: cette fois en tournant le cube en entier (sans faire de mouvement U par exemple, sinon la croix ne correspond plus aux centres), il faut trouver un des coins qui se trouve à la bonne place, mais pas forcément dans la bonne direction, voici un exemple: le coin se trouvant devant (jaune/rouge/bleu) est bien entre les faces jaune, rouge et bleu, il est donc à la bonne place. Contrairement aux coins à gauche qui, bien que sa face jaune soit orientée juste, n’est pas à la bonne place car il ne possède pas les couleurs jaune, bleu et orange (derrière, rappel: on sait que c’est orange car opposé de rouge).
+
+Une fois que le coin bien positionné a été trouvé, il faut le placer devant soi. Reste à savoir s’il va sur la droite ou sur la gauche. Pour savoir, il faut essayer, et si le coin se trouvant au dessus du coin juste devrait se trouver à côté de ce même coin juste, c’est que c’est la bonne position. Sinon, il faut tourner le cube d’un quart de tour pour que le coin juste soit de l’autre coté. On voit sur les images suivantes les positions de départs pour les deux cas. (Rappel: malgré la vue de dessus utilisée pour les images, la face jaune doit toujours rester la face qui se trouve sur le dessus) On voit sur ces images le coin sans flèche (jaune/rouge/bleu) en bas soit à droite, soit à gauche: il s’agit du coin à positionner correctement. Une fois cette position trouvée, il suffit d’appliquer la formule correspondante. Les deux formules sont symétriques et elles sont très visuelles, ce qui facilite grandement leur apprentissage.}
+
+\showto{english}{Before last step! It only remains to take care of the corners, first we put them in the right places, then the last step will be to return them in the right direction.
+
+Again, the observation is not easy: this time by turning the cube in full (without making U movement, otherwise the yellow cross would no longer corresponds to the centers), we must find one of the corners that is at the good place, but not necessarily in the right direction, here is an example: the corner in front (yellow / red / blue) is between the yellow, red and blue faces, so it is in the right place. Unlike the corners on the left which, although its yellow face is right, is not in the right place because it does not have the colors yellow, blue and orange (reminder: we know that the color of the back face is orange because it is the opposite of red).
+
+Once the well positioned corner has been found, it must be placed in front of you. It remains to be seen whether he is going to the right or the left. To know, we must try, and if the corner above the good corner should go next to the same good corner, it is the right position. If not, turn the cube a quarter of a turn so that the right corner is on the other side. The following images show the starting positions for both cases. (Reminder: in spite of the top view used for the images, the yellow face must always remain the face which is on the top) One sees on these images that the corner without arrow (yellow / red / blue) is positionned at the bottom either on the right, or on the left: this is the corner positionned correctly. Once this position is found, just apply the corresponding formula. Both formulas are symmetrical and they are very visual, which greatly facilitates their learning.}
+
+\begin{figure}[H]
+\def\W{0.3}
+\def\S{30mm}
+\centering
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\COA{cyellow}
+	\def\COB{cyellow}
+	\def\COC{cred}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cgreen}
+	\def\COH{cyellow}
+	\def\COI{cblue}
+	
+	\def\CAA{corange}
+	\def\CAB{cblue}
+	\def\CAC{cyellow}
+	\def\CAD{cblue}
+	
+	\def\CBA{cblue}
+	\def\CBB{cred}
+	\def\CBC{cyellow}
+	\def\CBD{cred}
+	
+	\def\CCA{corange}
+	\def\CCB{cgreen}
+	\def\CCC{cyellow}
+	\def\CCD{cgreen}
+	
+	\def\CDA{cred}
+	\def\CDB{corange}
+	\def\CDC{cgreen}
+	\def\CDD{corange}
+
+	\showto{french}{\caption*{\Large{Formule des coins}}}
+	\showto{english}{\caption*{\Large{Corner's algorithm}}}
+	\resizebox{0.8\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[arrow] ($(p022)+(0.5*\H, 0.5*\H)$) -- ($(p000)+(0.5*\H, 0.5*\H)$);
+	\draw[arrow] ($(p000)+(0.5*\H, 0.5*\H)$) -- ($(p020)+(0.5*\H, 0.5*\H)$);
+	\draw[arrow] ($(p020)+(0.5*\H, 0.5*\H)$) -- ($(p022)+(0.5*\H, 0.5*\H)$);
+	\end{tikzpicture}
+	}    	
+	\caption*{\Large{$L'$ $U$ $R$ $U'$ $L$ $U$ $R'$ $U'$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\COA{cred}
+	\def\COB{cyellow}
+	\def\COC{cgreen}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cyellow}
+	\def\COH{cyellow}
+	\def\COI{cyellow}
+	
+	\def\CAA{cblue}
+	\def\CAB{cred}
+	\def\CAC{corange}
+	\def\CAD{cred}
+	
+	\def\CBA{cyellow}
+	\def\CBB{cgreen}
+	\def\CBC{corange}
+	\def\CBD{cgreen}
+	
+	\def\CCA{cblue}
+	\def\CCB{corange}
+	\def\CCC{cred}
+	\def\CCD{corange}
+	
+	\def\CDA{cgreen}
+	\def\CDB{cblue}
+	\def\CDC{cyellow}
+	\def\CDD{cblue}
+
+	\showto{french}{\caption*{\Large{Formule des coins'}}}
+	\showto{english}{\caption*{\Large{Corner's algorithm'}}}
+	\resizebox{0.8\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[arrow] ($(p020)+(0.5*\H, 0.5*\H)$) -- ($(p002)+(0.5*\H, 0.5*\H)$);
+	\draw[arrow] ($(p002)+(0.5*\H, 0.5*\H)$) -- ($(p022)+(0.5*\H, 0.5*\H)$);
+	\draw[arrow] ($(p022)+(0.5*\H, 0.5*\H)$) -- ($(p020)+(0.5*\H, 0.5*\H)$);
+	\end{tikzpicture}
+	}    	
+	\caption*{\Large{$R$ $U'$ $L'$ $U$ $R'$ $U'$ $L$ $U$}}
+\end{subfigure}
+\end{figure}
+
+\begin{conseil}
+
+\showto{french}{Regardez les cubes blancs: on monte une ligne, on chasse le haut, on monte l’autre ligne, on chasse de l’autre coté le haut, une ligne se reforme, on la descend, on tourne le haut, l’autre ligne se reforme, on la descend, et on finit par une rotation du haut pour remettre les couleurs de la croix jaune juste.}
+
+\showto{english}{Look at the white cubes: a line goes up, we push it outside, the other line goes up, we push it outside, a line is reformed, it goes down, we turn the top, the other line reforms itself, it goes down down, and it ends with an upper rotation to put the colors of the yellow cross back to right position.}
+
+\end{conseil}
+
+\begin{figure}[H]
+\def\W{0.10}
+\def\S{0.01mm}
+\centering
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cblue}
+	\def\CAH{cred}
+	\def\CAI{corange}
+	
+	\def\CBA{cgreen}
+	\def\CBB{cgreen}
+	\def\CBC{cgreen}
+	\def\CBD{cgreen}
+	\def\CBE{cgreen}
+	\def\CBF{cgreen}
+	\def\CBG{cyellow}
+	\def\CBH{cgreen}
+	\def\CBI{corange}
+	
+	\def\CCA{cred}
+	\def\CCB{cyellow}
+	\def\CCC{cgreen}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cyellow}
+	\def\CCH{cyellow}
+	\def\CCI{cyellow}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}   
+	\caption*{\label{fig:ech1} \LARGE{$R$}} 	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cwhite}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cwhite}
+	\def\CAG{cblue}
+	\def\CAH{cred}
+	\def\CAI{cwhite}
+	
+	\def\CBA{cgreen}
+	\def\CBB{cgreen}
+	\def\CBC{corange}
+	\def\CBD{cgreen}
+	\def\CBE{cgreen}
+	\def\CBF{cgreen}
+	\def\CBG{cgreen}
+	\def\CBH{cgreen}
+	\def\CBI{cyellow}
+	
+	\def\CCA{cred}
+	\def\CCB{cyellow}
+	\def\CCC{cred}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cred}
+	\def\CCG{cyellow}
+	\def\CCH{cyellow}
+	\def\CCI{corange}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}   
+	\caption*{\label{fig:ech2} \LARGE{$U'$}} 	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cwhite}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cwhite}
+	\def\CAG{cgreen}
+	\def\CAH{cblue}
+	\def\CAI{cyellow}
+	
+	\def\CBA{cgreen}
+	\def\CBB{cgreen}
+	\def\CBC{corange}
+	\def\CBD{cgreen}
+	\def\CBE{cgreen}
+	\def\CBF{cgreen}
+	\def\CBG{cblue}
+	\def\CBH{cred}
+	\def\CBI{cwhite}
+	
+	\def\CCA{cyellow}
+	\def\CCB{cyellow}
+	\def\CCC{cred}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{corange}
+	\def\CCH{cred}
+	\def\CCI{cred}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}   
+	\caption*{\label{fig:ech3} \LARGE{$L'$}} 	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cwhite}
+	\def\CAB{cred}
+	\def\CAC{cwhite}
+	\def\CAD{cwhite}
+	\def\CAE{cred}
+	\def\CAF{cwhite}
+	\def\CAG{cwhite}
+	\def\CAH{cblue}
+	\def\CAI{cyellow}
+	
+	\def\CBA{cgreen}
+	\def\CBB{cgreen}
+	\def\CBC{corange}
+	\def\CBD{cgreen}
+	\def\CBE{cgreen}
+	\def\CBF{cgreen}
+	\def\CBG{cblue}
+	\def\CBH{cred}
+	\def\CBI{cwhite}
+	
+	\def\CCA{cred}
+	\def\CCB{cyellow}
+	\def\CCC{cred}
+	\def\CCD{cred}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cgreen}
+	\def\CCH{cred}
+	\def\CCI{cred}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}   
+	\caption*{\label{fig:ech4} \LARGE{$U$}} 	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cwhite}
+	\def\CAB{cred}
+	\def\CAC{cwhite}
+	\def\CAD{cwhite}
+	\def\CAE{cred}
+	\def\CAF{cwhite}
+	\def\CAG{cblue}
+	\def\CAH{cred}
+	\def\CAI{cwhite}
+	
+	\def\CBA{cgreen}
+	\def\CBB{cgreen}
+	\def\CBC{corange}
+	\def\CBD{cgreen}
+	\def\CBE{cgreen}
+	\def\CBF{cgreen}
+	\def\CBG{cgreen}
+	\def\CBH{cgreen}
+	\def\CBI{cyellow}
+	
+	\def\CCA{cred}
+	\def\CCB{cyellow}
+	\def\CCC{cred}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cred}
+	\def\CCG{cred}
+	\def\CCH{cred}
+	\def\CCI{cgreen}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}   
+	\caption*{\label{fig:ech5} \LARGE{$R'$}} 	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cwhite}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cwhite}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cblue}
+	\def\CAH{cred}
+	\def\CAI{cgreen}
+	
+	\def\CBA{cgreen}
+	\def\CBB{cgreen}
+	\def\CBC{cgreen}
+	\def\CBD{cgreen}
+	\def\CBE{cgreen}
+	\def\CBF{cgreen}
+	\def\CBG{cyellow}
+	\def\CBH{cgreen}
+	\def\CBI{corange}
+	
+	\def\CCA{cred}
+	\def\CCB{cyellow}
+	\def\CCC{cred}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cred}
+	\def\CCH{cred}
+	\def\CCI{cyellow}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}   
+	\caption*{\label{fig:ech6} \LARGE{$U'$}} 	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cwhite}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cwhite}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cwhite}
+	\def\CAH{cblue}
+	\def\CAI{cyellow}
+	
+	\def\CBA{cgreen}
+	\def\CBB{cgreen}
+	\def\CBC{cgreen}
+	\def\CBD{cgreen}
+	\def\CBE{cgreen}
+	\def\CBF{cgreen}
+	\def\CBG{cblue}
+	\def\CBH{cred}
+	\def\CBI{cgreen}
+	
+	\def\CCA{cred}
+	\def\CCB{cyellow}
+	\def\CCC{cred}
+	\def\CCD{cred}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cyellow}
+	\def\CCH{cyellow}
+	\def\CCI{cred}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}   
+	\caption*{\label{fig:ech7} \LARGE{$L$}} 	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cyellow}
+	\def\CAH{cblue}
+	\def\CAI{cyellow}
+	
+	\def\CBA{cgreen}
+	\def\CBB{cgreen}
+	\def\CBC{cgreen}
+	\def\CBD{cgreen}
+	\def\CBE{cgreen}
+	\def\CBF{cgreen}
+	\def\CBG{cblue}
+	\def\CBH{cred}
+	\def\CBI{cgreen}
+	
+	\def\CCA{corange}
+	\def\CCB{cyellow}
+	\def\CCC{cred}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{corange}
+	\def\CCH{cyellow}
+	\def\CCI{cred}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}   
+	\caption*{\label{fig:ech8} \LARGE{$U$}} 	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cred}
+	\def\CAB{cred}
+	\def\CAC{cred}
+	\def\CAD{cred}
+	\def\CAE{cred}
+	\def\CAF{cred}
+	\def\CAG{cblue}
+	\def\CAH{cred}
+	\def\CAI{cgreen}
+	
+	\def\CBA{cgreen}
+	\def\CBB{cgreen}
+	\def\CBC{cgreen}
+	\def\CBD{cgreen}
+	\def\CBE{cgreen}
+	\def\CBF{cgreen}
+	\def\CBG{cyellow}
+	\def\CBH{cgreen}
+	\def\CBI{cyellow}
+	
+	\def\CCA{cred}
+	\def\CCB{cyellow}
+	\def\CCC{cred}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{corange}
+	\def\CCH{cyellow}
+	\def\CCI{corange}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}	
+\end{subfigure}
+\end{figure}
+
+\begin{conseil}
+
+\showto{french}{Il se peut qu’aucun coin ne soit au bon emplacement, dans ce cas, il suffit de faire cette formule avec n’importe quelle orientation de départ.}
+\showto{english}{It may be that no corner is in the right place, in this case, just make this formula with any starting orientation.}
+
+\end{conseil}
+
+\end{document}
