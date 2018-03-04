@@ -1,0 +1,309 @@
+\documentclass[0_Main.tex]{subfiles}
+\begin{document}
+
+\section{Récapitulatif}
+\def\W{0.23}
+\def\S{0.05mm}
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cgray}
+	\def\CAB{cgray}
+	\def\CAC{cgray}
+	\def\CAD{cgray}
+	\def\CAE{cred}
+	\def\CAF{cgray}
+	\def\CAG{cgray}
+	\def\CAH{cred}
+	\def\CAI{cgray}
+	
+	\def\CBA{cgray}
+	\def\CBB{cgray}
+	\def\CBC{cgray}
+	\def\CBD{cgray}
+	\def\CBE{cblue}
+	\def\CBF{cgray}
+	\def\CBG{cgray}
+	\def\CBH{cblue}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cwhite}
+	\def\CCC{cgray}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{cgray}
+	\def\CCH{cwhite}
+	\def\CCI{cgray}
+	\showto{french}{\caption*{\LARGE{Etape 1}}}
+	\showto{english}{\caption*{\LARGE{Step 1}}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}
+	\showto{french}{\caption*{Croix blanche}}
+	\showto{english}{\caption*{White cross}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cgray}
+	\def\CAB{cgray}
+	\def\CAC{cgray}
+	\def\CAD{cgray}
+	\def\CAE{cred}
+	\def\CAF{cgray}
+	\def\CAG{cred}
+	\def\CAH{cred}
+	\def\CAI{cred}
+	
+	\def\CBA{cgray}
+	\def\CBB{cgray}
+	\def\CBC{cgray}
+	\def\CBD{cgray}
+	\def\CBE{cblue}
+	\def\CBF{cgray}
+	\def\CBG{cblue}
+	\def\CBH{cblue}
+	\def\CBI{cblue}
+	
+	\def\CCA{cwhite}
+	\def\CCB{cwhite}
+	\def\CCC{cwhite}
+	\def\CCD{cwhite}
+	\def\CCE{cwhite}
+	\def\CCF{cwhite}
+	\def\CCG{cwhite}
+	\def\CCH{cwhite}
+	\def\CCI{cwhite}
+	\showto{french}{\caption*{\LARGE{Etape 2}}}
+	\showto{english}{\caption*{\LARGE{Step 2}}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\end{tikzpicture}
+	}
+	\showto{french}{\caption*{Coins blancs}}
+	\showto{english}{\caption*{White corners}}	
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cgray}
+	\def\CAE{cblue}
+	\def\CAF{cblack}
+	\def\CAG{cgray}
+	\def\CAH{cblue}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cblack}
+	\def\CBE{cred}
+	\def\CBF{cgray}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cred}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cgray}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\showto{french}{\caption*{\LARGE{Etape 3}}}
+	\showto{english}{\caption*{\LARGE{Step 3}}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p100)+(0,-\OFF)$) --++ ($3*(vh1)$) --++ ($3*(vh2)$) --++ ($-\RATIO*(vv2)$) --++ ($-3*(vh2)$) --++ ($-3*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}
+	\caption*{\normalsize{$U$ $R$ $U'$ $R'$ $U'$ $F'$ $U$ $F$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cgray}
+	\def\CAE{cblue}
+	\def\CAF{cblack}
+	\def\CAG{cgray}
+	\def\CAH{cgray}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cblack}
+	\def\CBE{cred}
+	\def\CBF{cgray}
+	\def\CBG{cgray}
+	\def\CBH{cred}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cblue}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\showto{french}{\caption*{\LARGE{Etape 3'}}}
+	\showto{english}{\caption*{\LARGE{Step 3'}}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p100)+(0,-\OFF)$) --++ ($3*(vh1)$) --++ ($3*(vh2)$) --++ ($-\RATIO*(vv2)$) --++ ($-3*(vh2)$) --++ ($-3*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}
+	\caption*{\normalsize{$U'$ $F'$ $U$ $F$ $U$ $R$ $U'$ $R'$}}
+\end{subfigure}
+\\
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{cgray}
+	\def\CAH{cyellow}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cgray}
+	\def\CCD{cyellow}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\showto{french}{\caption*{\LARGE{Etape 4: Barre}}}
+	\showto{english}{\caption*{\LARGE{Step 4: Bar}}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p100)+(0,-\OFF)$) --++ ($3*(vh1)$) --++ ($3*(vh2)$) --++ ($-\RATIO*(vv2)$) --++ ($-3*(vh2)$) --++ ($-3*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}
+	\caption*{\normalsize{$F$ $R$ $U$ $R'$ $U'$ $F'$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{cgray}
+	\def\CAH{cyellow}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cgray}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cyellow}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cyellow}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\showto{french}{\caption*{\LARGE{Etape 4: L}}}
+	\showto{english}{\caption*{\LARGE{Step 4: L}}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p100)+(0,-\OFF)$) --++ ($3*(vh1)$) --++ ($3*(vh2)$) --++ ($-\RATIO*(vv2)$) --++ ($-3*(vh2)$) --++ ($-3*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}
+	\caption*{\normalsize{$f$ $R$ $U$ $R'$ $U'$ $f'$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cblue}
+	\def\CAD{cblue}
+	\def\CAE{cblue}
+	\def\CAF{cblue}
+	\def\CAG{cgray}
+	\def\CAH{cyellow}
+	\def\CAI{cgray}
+	
+	\def\CBA{cred}
+	\def\CBB{cred}
+	\def\CBC{cred}
+	\def\CBD{cred}
+	\def\CBE{cred}
+	\def\CBF{cred}
+	\def\CBG{cgray}
+	\def\CBH{cyellow}
+	\def\CBI{cgray}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgray}
+	\def\CCC{cgray}
+	\def\CCD{cgray}
+	\def\CCE{cyellow}
+	\def\CCF{cgray}
+	\def\CCG{cgray}
+	\def\CCH{cgray}
+	\def\CCI{cgray}
+	\showto{french}{\caption*{\LARGE{Etape 4: Point}}}
+	\showto{english}{\caption*{\LARGE{Step 4: Point}}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cube.tex}
+	\filldraw[border, fill = cwhite] ($(p100)+(0,-\OFF)$) --++ ($3*(vh1)$) --++ ($3*(vh2)$) --++ ($-\RATIO*(vv2)$) --++ ($-3*(vh2)$) --++ ($-3*(vh1)$) -- ($(p100)+(0,-\OFF)$);
+	\end{tikzpicture}
+	}
+	\showto{french}{\caption*{Barre + L}}
+	\showto{english}{\caption*{Bar + L}}
+\end{subfigure}
+\end{figure}
+
+
+
+
+\end{document}
