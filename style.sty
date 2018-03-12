@@ -83,8 +83,8 @@
 
 \tikzset{
   doubled/.style args={#1 colored by #2 and #3}{    
-   -latex,line width=#1,#2,
-    postaction={draw,-latex,#3,line width=0.7*(#1),shorten <=(#1)/4,shorten >=0.67*(#1)},
+   -latex,line width=#1,#2,rounded corners=3cm,
+    postaction={draw,-latex,#3,line width=0.7*(#1),rounded corners=3cm,shorten <=(#1)/4,shorten >=0.67*(#1)},
   },
   doubled/.default=16 pt colored by black and cwhite,
 }

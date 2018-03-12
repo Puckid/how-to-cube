@@ -38,12 +38,12 @@
 	\resizebox{0.45\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
-	\draw[doubled] ($(p311)+0.5*(vh3)+0.5*(vv3)+1*(vv1)$) node[above](up){\resizebox{\HXA}{!}{\textcolor{cpurple}{Up}}} --++($-1*(vv1)$);
-	\draw[doubled] ($(p332)+1.5*(vv3)$) node[right](back){\resizebox{3.8cm}{!}{\textcolor{cpurple}{Back}}} --++($-1.5*(vv3)$);
-	\draw[doubled] ($(p310)-1.5*(vh3)$) node[left](left){\resizebox{3.8cm}{!}{\textcolor{cpurple}{Left}}} --++($1.5*(vh3)$);
-	\draw[doubled] ($(p211)+0.5*(vh2)+0.5*(vv2)+2*(vh2)$) node[right](right){\resizebox{4.2cm}{!}{\textcolor{cpurple}{Right}}} --++($-2*(vh2)$);
-	\draw[doubled] ($(p111)+0.5*(vh1)+0.5*(vv1)-2*(vh1)$) node[left](front){\resizebox{4.2cm}{!}{\textcolor{cpurple}{Front}}} --++($2*(vh1)$);
-	\draw[doubled] ($(p102)-1*(vv1)$) node[below](below) {\resizebox{4.6cm}{!}{\textcolor{cpurple}{Down}}} --++($1*(vv1)$);
+	\draw[doubled] ($(p311)+0.5*(vh3)+0.5*(vv3)+1*(vv1)$) node[above](up){\resizebox{\HXA}{!}{\textcolor{black}{Up}}} --++($-1*(vv1)$);
+	\draw[doubled] ($(p332)+1.5*(vv3)$) node[right](back){\resizebox{3.8cm}{!}{\textcolor{black}{Back}}} --++($-1.5*(vv3)$);
+	\draw[doubled] ($(p310)-1.5*(vh3)$) node[left](left){\resizebox{3.8cm}{!}{\textcolor{black}{Left}}} --++($1.5*(vh3)$);
+	\draw[doubled] ($(p211)+0.5*(vh2)+0.5*(vv2)+2*(vh2)$) node[right](right){\resizebox{4.2cm}{!}{\textcolor{black}{Right}}} --++($-2*(vh2)$);
+	\draw[doubled] ($(p111)+0.5*(vh1)+0.5*(vv1)-2*(vh1)$) node[left](front){\resizebox{4.2cm}{!}{\textcolor{black}{Front}}} --++($2*(vh1)$);
+	\draw[doubled] ($(p102)-1*(vv1)$) node[below](below) {\resizebox{4.6cm}{!}{\textcolor{black}{Down}}} --++($1*(vv1)$);
 	\end{tikzpicture}
 	}    
 	\vspace{-10pt}
@@ -95,6 +95,7 @@
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
+	\draw[doubled]($(p112)+0.5*(vh1)$) -- ($(p132)+0.5*(vh1)$) -- ($(p322)+0.5*(vh3)$);
 	\end{tikzpicture}
 	}    	
 \end{subfigure}
@@ -134,6 +135,7 @@
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
+	\draw[doubled]($(p320)+0.5*(vh3)$) -- ($(p130)+0.5*(vh1)$) -- ($(p110)+0.5*(vh1)$);
 	\end{tikzpicture}
 	}    	
 \end{subfigure}
@@ -173,6 +175,7 @@
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
+	\draw[doubled]($(p301)+0.5*(vv3)$) -- ($(p303)+0.5*(vv3)$) -- ($(p210)+0.5*(vh2)$);
 	\end{tikzpicture}
 	}    
 \end{subfigure}
@@ -212,6 +215,7 @@
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
+	\draw[doubled]($(p101)+0.5*(vv1)$) -- ($(p103)+0.5*(vv1)$) -- ($(p202)+0.5*(vv2)$);
 	\end{tikzpicture}
 	}    
 \end{subfigure}
@@ -251,6 +255,7 @@
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
+	\draw[doubled]($(p222)+0.5*(vv2)$) -- ($(p123)+0.5*(vv1)$) -- ($(p121)+0.5*(vv1)$);
 	\end{tikzpicture}
 	}    
 \end{subfigure}
@@ -290,6 +295,7 @@
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
+	\draw[doubled]($(p212)+0.5*(vh2)$) -- ($(p232)+0.5*(vh2)$) -- ($(p321)+0.5*(vv3)$);
 	\end{tikzpicture}
 	}   
 \end{subfigure}
@@ -328,6 +334,7 @@
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
+	\draw[doubled]($(p322)+0.5*(vh3)$) -- ($(p132)+0.5*(vh1)$) -- ($(p112)+0.5*(vh1)$);
 	\end{tikzpicture}
 	}   
 	\caption*{\label{fig:mouvR'} \LARGE{$R'$}} 	
@@ -367,6 +374,7 @@
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
+	\draw[doubled]($(p110)+0.5*(vh1)$) -- ($(p130)+0.5*(vh1)$) -- ($(p320)+0.5*(vh3)$);
 	\end{tikzpicture}
 	}    
 	\caption*{\label{fig:mouvL'} \LARGE{$L'$}}	
@@ -406,6 +414,7 @@
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
+	\draw[doubled]($(p210)+0.5*(vh2)$) -- ($(p303)+0.5*(vv3)$) -- ($(p301)+0.5*(vv3)$);
 	\end{tikzpicture}
 	}    
 	\caption*{\label{fig:mouvF'} \LARGE{$F'$}}
@@ -445,6 +454,7 @@
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
+	\draw[doubled]($(p202)+0.5*(vv2)$) -- ($(p103)+0.5*(vv1)$) -- ($(p101)+0.5*(vv1)$);
 	\end{tikzpicture}
 	}    
 	\caption*{\label{fig:mouvD'} \LARGE{$D'$}}
@@ -484,6 +494,7 @@
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
+	\draw[doubled]($(p121)+0.5*(vv1)$) -- ($(p123)+0.5*(vv1)$) -- ($(p222)+0.5*(vv2)$);
 	\end{tikzpicture}
 	}    
 	\caption*{\label{fig:mouvU'} \LARGE{$U'$}}
@@ -523,6 +534,7 @@
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
+	\draw[doubled]($(p321)+0.5*(vv3)$) -- ($(p232)+0.5*(vh2)$) -- ($(p212)+0.5*(vh2)$);
 	\end{tikzpicture}
 	}   
 	\caption*{\label{fig:mouvB'} \LARGE{$B'$}}
@@ -577,6 +589,8 @@ There are also some special movements. A movement defined by a lowercase letter 
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
+	\draw[doubled]($(p301)+0.5*(vv3)$) -- ($(p303)+0.5*(vv3)$) -- ($(p210)+0.5*(vh2)$);
+	\draw[doubled]($(p311)+0.5*(vv3)$) -- ($(p313)+0.5*(vv3)$) -- ($(p211)+0.5*(vh2)$);
 	\end{tikzpicture}
 	}
 	\caption*{\label{fig:mouvf} \LARGE{$f$}}    	
@@ -616,6 +630,8 @@ There are also some special movements. A movement defined by a lowercase letter 
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
+	\draw[doubled]($(p210)+0.5*(vh2)$) -- ($(p303)+0.5*(vv3)$) -- ($(p301)+0.5*(vv3)$);
+	\draw[doubled]($(p211)+0.5*(vh2)$) -- ($(p313)+0.5*(vv3)$) -- ($(p311)+0.5*(vv3)$);
 	\end{tikzpicture}
 	}
 	\caption*{\label{fig:mouvf'} \LARGE{$f'$}}    	
@@ -655,6 +671,7 @@ There are also some special movements. A movement defined by a lowercase letter 
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
+	\draw[doubled]($(p331)+0.5*(vv3)$) -- ($(p223)+0.5*(vv2)$) -- ($(p220)+0.5*(vv2)$) -- ($(p121)+0.5*(vv1)$);
 	\end{tikzpicture}
 	}
 	\caption*{\label{fig:mouvU2} \LARGE{$U^2$}}    
