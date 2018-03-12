@@ -1,8 +1,12 @@
 \documentclass[0_Main.tex]{subfiles}
 \begin{document}
 
-\section{Récapitulatif}
+\newcommand{\tsize}{\normalsize}
+
+\showto{french}{\section{Récapitulatif}}
+\showto{english}{\section{Summary}}
 \def\W{0.23}
+\def\WW{0.32}
 \def\S{0.05mm}
 
 \begin{figure}[H]
@@ -38,15 +42,13 @@
 	\def\CCG{cgray}
 	\def\CCH{cwhite}
 	\def\CCI{cgray}
-	\showto{french}{\caption*{\LARGE{Etape 1}}}
-	\showto{english}{\caption*{\LARGE{Step 1}}}
+	\showto{french}{\caption*{\tsize{Etape 1: Croix Blanche}}}
+	\showto{english}{\caption*{\tsize{Step 1: White Cross}}}
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
 	\end{tikzpicture}
 	}
-	\showto{french}{\caption*{Croix blanche}}
-	\showto{english}{\caption*{White cross}}
 \end{subfigure}
 \hspace{\S}
 \begin{subfigure}[t]{\W\columnwidth}
@@ -80,15 +82,13 @@
 	\def\CCG{cwhite}
 	\def\CCH{cwhite}
 	\def\CCI{cwhite}
-	\showto{french}{\caption*{\LARGE{Etape 2}}}
-	\showto{english}{\caption*{\LARGE{Step 2}}}
+	\showto{french}{\caption*{\tsize{Etape 2: Coins Blancs}}}
+	\showto{english}{\caption*{\tsize{Step 2: White Corners}}}
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
 	\end{tikzpicture}
 	}
-	\showto{french}{\caption*{Coins blancs}}
-	\showto{english}{\caption*{White corners}}	
 \end{subfigure}
 \hspace{\S}
 \begin{subfigure}[t]{\W\columnwidth}
@@ -122,8 +122,8 @@
 	\def\CCG{cgray}
 	\def\CCH{cgray}
 	\def\CCI{cgray}
-	\showto{french}{\caption*{\LARGE{Etape 3}}}
-	\showto{english}{\caption*{\LARGE{Step 3}}}
+	\showto{french}{\caption*{\tsize{Etape 3: Couronne}}}
+	\showto{english}{\caption*{\tsize{Step 3: Crown}}}
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
@@ -164,8 +164,8 @@
 	\def\CCG{cgray}
 	\def\CCH{cgray}
 	\def\CCI{cgray}
-	\showto{french}{\caption*{\LARGE{Etape 3'}}}
-	\showto{english}{\caption*{\LARGE{Step 3'}}}
+	\showto{french}{\caption*{\tsize{Etape 3': Couronne}}}
+	\showto{english}{\caption*{\tsize{Step 3': Crown}}}
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
@@ -206,8 +206,8 @@
 	\def\CCG{cgray}
 	\def\CCH{cgray}
 	\def\CCI{cgray}
-	\showto{french}{\caption*{\LARGE{Etape 4: Barre}}}
-	\showto{english}{\caption*{\LARGE{Step 4: Bar}}}
+	\showto{french}{\caption*{\tsize{Etape 4: Barre Jaune}}}
+	\showto{english}{\caption*{\tsize{Step 4: Yellow Bar}}}
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
@@ -248,8 +248,8 @@
 	\def\CCG{cgray}
 	\def\CCH{cgray}
 	\def\CCI{cgray}
-	\showto{french}{\caption*{\LARGE{Etape 4: L}}}
-	\showto{english}{\caption*{\LARGE{Step 4: L}}}
+	\showto{french}{\caption*{\tsize{Etape 4': L Jaune}}}
+	\showto{english}{\caption*{\tsize{Step 4': Yellow L}}}
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
@@ -290,17 +290,242 @@
 	\def\CCG{cgray}
 	\def\CCH{cgray}
 	\def\CCI{cgray}
-	\showto{french}{\caption*{\LARGE{Etape 4: Point}}}
-	\showto{english}{\caption*{\LARGE{Step 4: Point}}}
+	\showto{french}{\caption*{\tsize{Etape 4'': Point Jaune}}}
+	\showto{english}{\caption*{\tsize{Step 4'': Yellow Point}}}
 	\resizebox{\columnwidth}{!}
 	{
 	\input{./tikz/cube.tex}
 	\filldraw[border, fill = cwhite] ($(p100)+(0,-\OFF)$) --++ ($3*(vh1)$) --++ ($3*(vh2)$) --++ ($-\RATIO*(vv2)$) --++ ($-3*(vh2)$) --++ ($-3*(vh1)$) -- ($(p100)+(0,-\OFF)$);
 	\end{tikzpicture}
 	}
-	\showto{french}{\caption*{Barre + L}}
-	\showto{english}{\caption*{Bar + L}}
+	\caption*{\showto{french}{Barre + L}}
+	\caption*{\showto{english}{Bar + L}}
 \end{subfigure}
+\\
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\COA{cgray}
+	\def\COB{cyellow}
+	\def\COC{cgray}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cgray}
+	\def\COH{cyellow}
+	\def\COI{cgray}
+	
+	\def\CAA{cgray}
+	\def\CAB{corange}
+	\def\CAC{cgray}
+	\def\CAD{corange}
+	
+	\def\CBA{cgray}
+	\def\CBB{cgreen}
+	\def\CBC{cgray}
+	\def\CBD{cblue}
+	
+	\def\CCA{cgray}
+	\def\CCB{cblue}
+	\def\CCC{cgray}
+	\def\CCD{cred}
+	
+	\def\CDA{cgray}
+	\def\CDB{cred}
+	\def\CDC{cgray}
+	\def\CDD{cgreen}
+
+	\showto{french}{\caption*{\tsize{Etape 5: Croix Jaune}}}
+	\showto{english}{\caption*{\tsize{Step 5: Yellow Cross}}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[arrow] ($(p013)+(0, 0.5*\H)$) -- ($(p010)+(0, 0.5*\H)$);
+	\draw[arrow] ($(p010)+(0, 0.5*\H)$) -- ($(p031)+(0.5*\H, 0)$);
+	\draw[arrow] ($(p031)+(0.5*\H, 0)$) -- ($(p013)+(0, 0.5*\H)$);
+	\end{tikzpicture}
+	}
+	\caption*{\textcolor{cgreen}{$R$ $U^2$ $R'$ $U'$ $R$ $U'$ $R'$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\COA{cgray}
+	\def\COB{cyellow}
+	\def\COC{cgray}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cgray}
+	\def\COH{cyellow}
+	\def\COI{cgray}
+	
+	\def\CAA{cgray}
+	\def\CAB{corange}
+	\def\CAC{cgray}
+	\def\CAD{corange}
+	
+	\def\CBA{cgray}
+	\def\CBB{cred}
+	\def\CBC{cgray}
+	\def\CBD{cblue}
+	
+	\def\CCA{cgray}
+	\def\CCB{cgreen}
+	\def\CCC{cgray}
+	\def\CCD{cred}
+	
+	\def\CDA{cgray}
+	\def\CDB{cblue}
+	\def\CDC{cgray}
+	\def\CDD{cgreen}
+
+	\showto{french}{\caption*{\tsize{Etape 5': Croix jaune}}}
+	\showto{english}{\caption*{\tsize{Step 5': Yellow Cross}}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[arrow] ($(p010)+(0, 0.5*\H)$) -- ($(p013)+(0, 0.5*\H)$);
+	\draw[arrow] ($(p031)+(0.5*\H, 0)$) -- ($(p010)+(0, 0.5*\H)$);
+	\draw[arrow] ($(p013)+(0, 0.5*\H)$) -- ($(p031)+(0.5*\H, 0)$);
+	\end{tikzpicture}
+	}    	
+	\caption*{\textcolor{corange}{$L'$ $U^2$ $L$ $U$ $L'$ $U$ $L$}}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\COA{cred}
+	\def\COB{cyellow}
+	\def\COC{cgreen}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cyellow}
+	\def\COH{cyellow}
+	\def\COI{cyellow}
+	
+	\def\CAA{cblue}
+	\def\CAB{cred}
+	\def\CAC{corange}
+	\def\CAD{cred}
+	
+	\def\CBA{cyellow}
+	\def\CBB{cgreen}
+	\def\CBC{corange}
+	\def\CBD{cgreen}
+	
+	\def\CCA{cblue}
+	\def\CCB{corange}
+	\def\CCC{cred}
+	\def\CCD{corange}
+	
+	\def\CDA{cgreen}
+	\def\CDB{cblue}
+	\def\CDC{cyellow}
+	\def\CDD{cblue}
+
+	\showto{french}{\caption*{\tsize{Etape 6: Coins Jaune}}}
+	\showto{english}{\caption*{\tsize{Step 6: Yellow Corners}}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[double arrow] ($(p020)+(0.5*\H, 0.5*\H)$) -- ($(p002)+(0.5*\H, 0.5*\H)$);
+	\draw[double arrow] ($(p002)+(0.5*\H, 0.5*\H)$) -- ($(p022)+(0.5*\H, 0.5*\H)$);
+	\draw[double arrow] ($(p022)+(0.5*\H, 0.5*\H)$) -- ($(p020)+(0.5*\H, 0.5*\H)$);
+	\end{tikzpicture}
+	}    	
+	\caption*{$R$ $U'$ $L'$ $U$ $R'$ $U'$ $L$ $U$}
+\end{subfigure}
+\hspace{\S}
+\begin{subfigure}[t]{\W\columnwidth}
+\centering
+	\def\COA{cyellow}
+	\def\COB{cyellow}
+	\def\COC{cred}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cgreen}
+	\def\COH{cyellow}
+	\def\COI{cblue}
+	
+	\def\CAA{corange}
+	\def\CAB{cblue}
+	\def\CAC{cyellow}
+	\def\CAD{cblue}
+	
+	\def\CBA{cblue}
+	\def\CBB{cred}
+	\def\CBC{cyellow}
+	\def\CBD{cred}
+	
+	\def\CCA{corange}
+	\def\CCB{cgreen}
+	\def\CCC{cyellow}
+	\def\CCD{cgreen}
+	
+	\def\CDA{cred}
+	\def\CDB{corange}
+	\def\CDC{cgreen}
+	\def\CDD{corange}
+
+	\showto{french}{\caption*{\tsize{Etape 6': Croix Jaune}}}
+	\showto{english}{\caption*{\tsize{Step 6': Yellow Cross}}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[arrow] ($(p022)+(0.5*\H, 0.5*\H)$) -- ($(p000)+(0.5*\H, 0.5*\H)$);
+	\draw[arrow] ($(p000)+(0.5*\H, 0.5*\H)$) -- ($(p020)+(0.5*\H, 0.5*\H)$);
+	\draw[arrow] ($(p020)+(0.5*\H, 0.5*\H)$) -- ($(p022)+(0.5*\H, 0.5*\H)$);
+	\end{tikzpicture}
+	}    	
+	\caption*{$L'$ $U$ $R$ $U'$ $L$ $U$ $R'$ $U'$}
+\end{subfigure}
+\\
+\begin{subfigure}[t]{\WW\columnwidth}
+\centering
+	\def\COA{cyellow}
+	\def\COB{cyellow}
+	\def\COC{cblue}
+	\def\COD{cyellow}
+	\def\COE{cyellow}
+	\def\COF{cyellow}
+	\def\COG{cyellow}
+	\def\COH{cyellow}
+	\def\COI{cgreen}
+	
+	\def\CAA{cblue}
+	\def\CAB{cblue}
+	\def\CAC{cred}
+	\def\CAD{cblue}
+	
+	\def\CBA{cyellow}
+	\def\CBB{cred}
+	\def\CBC{cyellow}
+	\def\CBD{cred}
+	
+	\def\CCA{cred}
+	\def\CCB{cgreen}
+	\def\CCC{cgreen}
+	\def\CCD{cgreen}
+	
+	\def\CDA{corange}
+	\def\CDB{corange}
+	\def\CDC{corange}
+	\def\CDD{corange}
+
+	\showto{french}{\caption*{\tsize{Etape 7: Formule Finale}}}
+	\showto{english}{\caption*{\tsize{Step 7: Final Algorithm}}}
+	\resizebox{\columnwidth}{!}
+	{
+	\input{./tikz/cubeTop.tex}
+	\draw[double arrow] ($(p003)+(1.2*\H, 0.5*\H)$) to ($(p003)+(\HS, 0.5*\H)$);
+	\draw[arrow] ($(p023)+(1.2*\H, 0.5*\H)$) -- ($(p023)+(\HS, 0.5*\H)$);
+	\end{tikzpicture}
+	}    	
+	\caption*{\textcolor{cgreen}{$R$ $U^2$ $R'$ $U'$ $R$ $U'$ $R'$} \textcolor{corange}{$L'$ $U^2$ $L$ $U$ $L'$ $U$ $L$}}
+\end{subfigure}
+
 \end{figure}
 
 
