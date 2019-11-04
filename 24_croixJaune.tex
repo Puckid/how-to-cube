@@ -58,7 +58,7 @@ As for the beginning of the cube, the resolution of the last face begins by crea
 
 We are therefore interested only in the edges of the yellow face, so without taking into account the corners. Luckily, there are only three possible cases happening at this point, so if your cube is in a different position than one of the three cases shown below, there must be an error in the crown, or if your cube has already been disassembled, it may have gone wrong.}
 
-\begin{figure}[H]
+\begin{figure}[h!]
 \def\W{0.24}
 \def\S{0.01mm}
 \centering
@@ -97,7 +97,8 @@ We are therefore interested only in the edges of the yellow face, so without tak
 	{
 	\input{./tikz/cube.tex}
 	\end{tikzpicture}
-	}   
+	}
+	\hfill
 	\showto{french}{\caption*{\label{fig:croixBarre} \LARGE{Barre}}}
 	\showto{english}{\caption*{\label{fig:croixBarre} \LARGE{Bar}}}
 \end{subfigure}
@@ -137,7 +138,8 @@ We are therefore interested only in the edges of the yellow face, so without tak
 	{
 	\input{./tikz/cube.tex}
 	\end{tikzpicture}
-	}    
+	}
+	\hfill
 	\caption*{\label{fig:croixL} \LARGE{L}}	
 \end{subfigure}
 \hspace{\S}
@@ -176,7 +178,8 @@ We are therefore interested only in the edges of the yellow face, so without tak
 	{
 	\input{./tikz/cube.tex}
 	\end{tikzpicture}
-	}    
+	}
+	\hfill
 	\caption*{\label{fig:croixPoint} \LARGE{Point}}
 \end{subfigure}
 \hspace{\S}
@@ -215,7 +218,8 @@ We are therefore interested only in the edges of the yellow face, so without tak
 	{
 	\input{./tikz/cube.tex}
 	\end{tikzpicture}
-	}    
+	}
+	\hfill
 	\showto{french}{\caption*{\label{fig:croixEnd} \LARGE{Croix}}}
 	\showto{english}{\caption*{\label{fig:croixEnd} \LARGE{Cross}}}
 \end{subfigure}
@@ -232,10 +236,10 @@ We are therefore interested only in the edges of the yellow face, so without tak
 
 \showto{english}{We start with solution for the "Bar" and "L" cases. The "point" is solved by the combination of these two}
 
-\def\W{0.13}
+\def\W{0.11}
 \begin{tabular}[b]{r | c c p{\W\columnwidth} c c c p{\W\columnwidth}}
-	& \showto{french}{Placement} \showto{english}{Starting point} & & \showto{french}{Mouvement préliminaire} \showto{english}{Preliminary move} & &	\showto{french}{Gâchette} \showto{english}{Trigger} & & \showto{french}{Mouvement final} \showto{english}{Final move}	\\ \hline
-\showto{french}{\Large{Barre}} \showto{english}{\Large{Bar}} & \resizebox{\W\columnwidth}{!}
+	& \textbf{\showto{french}{Placement} \showto{english}{Starting point}} & \multicolumn{2}{c}{\textbf{\showto{french}{Mouvement préliminaire} \showto{english}{Preliminary move}}} & \multicolumn{2}{c}{\textbf{\showto{french}{Gâchette} \showto{english}{Trigger}}} & \multicolumn{2}{c}{\textbf{\showto{french}{Mouvement final} \showto{english}{Final move}}} \\ \hline
+\showto{french}{\Large{Barre}} \showto{english}{\Large{Bar}} \hfill & \resizebox{\W\columnwidth}{!}
 	{
 	\def\CAA{cblue}
 	\def\CAB{cblue}
@@ -269,7 +273,7 @@ We are therefore interested only in the edges of the yellow face, so without tak
 	\input{./tikz/cube.tex}
 	\end{tikzpicture}
 	}
-& \Large{$F$} & 	\resizebox{\W\columnwidth}{!}
+& \Large{$F$} \hfill & 	\resizebox{\W\columnwidth}{!}
 	{
 	\def\CAA{cblue}
 	\def\CAB{cblue}
@@ -303,7 +307,7 @@ We are therefore interested only in the edges of the yellow face, so without tak
 	\input{./tikz/cube.tex}
 	\end{tikzpicture}
 	}    
-& \Large{$R$ $U$ $R'$ $U'$} & 	\resizebox{\W\columnwidth}{!}
+& \Large{$R$ $U$ $R'$ $U'$} \hfill & 	\resizebox{\W\columnwidth}{!}
 	{
 	\def\CAA{cblue}
 	\def\CAB{cblue}
@@ -337,7 +341,7 @@ We are therefore interested only in the edges of the yellow face, so without tak
 	\input{./tikz/cube.tex}
 	\end{tikzpicture}
 	}
-& \Large{$F'$} &	\resizebox{\W\columnwidth}{!}
+& \Large{$F'$} \hfill &	\resizebox{\W\columnwidth}{!}
 	{
 	\def\CAA{cblue}
 	\def\CAB{cblue}
@@ -372,6 +376,7 @@ We are therefore interested only in the edges of the yellow face, so without tak
 	\end{tikzpicture}
 	}
 \\
+\hline
 \Large{L} &	\resizebox{\W\columnwidth}{!}
 	{
 	\def\CAA{cblue}
